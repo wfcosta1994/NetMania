@@ -16,3 +16,14 @@ function rolarparaesquerda() {
     setaEsquerda.style = "display:none"
     setaDireita.style = "display:flex"
 }
+
+//Botão que dar acesso a página de gerar boletos
+const url = "http://netmaniainternet.com.br/client"
+const btn = document.querySelector("#btn_GetQuote")
+function acessar(url) {
+    const cliente = window.open(url, '_blank')
+    cliente.focus()
+}
+btn.addEventListener('click', () => {
+    window.open(url)
+})
