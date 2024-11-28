@@ -109,14 +109,14 @@
 }
 
 .logo {
-    margin: 3px;
+    margin: 1%;
     width: 100px;
-    height: 40px;
+    height: 30px;
 }
 
 .capa {
     width: 100%;
-    height: 610px;
+    height: 45rem;
 }
 
 .nav-link:hover {
@@ -529,13 +529,27 @@
 
 @media screen and (max-width: 480px) {
     .logo {
-        margin-top: -15px;
+        margin-top: -5px;
         height: 25px;
+    }
+
+    .capa {
+        width: 100%;
+        height: 200px;
     }
 
     #navbarNavDropdown {
         background-color: white;
-        height: 220px;
+        height: 15rem;
+    }
+
+    .nav-item {
+        width: 17.3rem;
+        margin-left: 2%;
+    }
+
+    .container-fluid {
+        padding-left: 0px !important;
     }
 
     #about {
@@ -552,11 +566,10 @@
     }
 
     #service {
-        height: 1050px;
+        height: 1080px;
     }
 
     #about #img-about {
-        margin-top: 75%;
         height: 300px;
         width: 300px;
     }
@@ -603,4 +616,42 @@
         flex-direction: column;
         height: auto;
     }
+
+    .navbar-toggler {
+        height: 1.8rem;
+    }
+
+    .navbar-toggler .navbar-toggler-icon {
+        height: 1rem;
+        width: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .videos {
+        /* background: url("./img/BANNER-MENINA.png"); */
+        position: relative;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        z-index: 1;
+        width: 100%;
+    }
+
+    .ul_headTop li {
+        /* list-style-type: none; */
+        /* text-align: center; */
+        margin: 0;
+        text-align: left;
+    }
+
+    .ul_headTop li a {
+        margin: -10px;
+        font-size: 12px;
+        /* padding: 8px; */
+        /* display: inline-block; */
+        /* color: black; */
+        /* color-scheme: initial; */
+    }
+
 }
