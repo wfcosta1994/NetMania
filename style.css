@@ -145,6 +145,10 @@
     animation-fill-mode: forwards;
 }
 
+.card-plano {
+    margin-bottom: 10%;
+}
+
 @keyframes grow {
     0% {
         font-size: 0;
@@ -527,6 +531,67 @@
     height: 600px
 }
 
+footer {
+    padding: 2%;
+    width: 100%;
+    background-image: linear-gradient(to right, #001E5B, #3693CA);
+}
+
+footer .linha1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+footer nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 330px;
+}
+
+footer h5 {
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+    background-color: black;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+footer ul li {
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    margin: 10px 0px 10px 0px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    color: #888888;
+}
+
+footer .enderecoFooter {
+    color: white;
+}
+
+
+
+
+
 @media screen and (max-width: 480px) {
     .logo {
         margin-top: -5px;
@@ -638,20 +703,16 @@
         width: 100%;
     }
 
-    .ul_headTop li {
-        /* list-style-type: none; */
-        /* text-align: center; */
-        margin: 0;
-        text-align: left;
+    .ul_headTop li .endereco {
+        display: none;
     }
 
-    .ul_headTop li a {
-        margin: -10px;
-        font-size: 12px;
-        /* padding: 8px; */
-        /* display: inline-block; */
-        /* color: black; */
-        /* color-scheme: initial; */
+    .ul_headTop li .email {
+        display: none;
     }
 
+    .ul_headTop li .fone {
+        font-size: 14px;
+        margin-left: -40px;
+    }
 }
