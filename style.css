@@ -351,14 +351,14 @@
 .card-movie img {
     width: 230px;
     height: 300px;
-    margin-top: -60px;
+    /* margin-top: -60px; */
     border-radius: 10px;
 }
 
 .card-movie_2 img {
     width: 230px;
     height: 300px;
-    margin-top: -60px;
+    /* margin-top: -60px; */
     border-radius: 10px;
 }
 
@@ -369,10 +369,6 @@
 
 .cards-movies {
     margin: 1%;
-}
-
-.card-movie_2 {
-    margin-top: 20%;
 }
 
 .todo-cards {
@@ -528,7 +524,7 @@
     background-size: cover;
     z-index: 1;
     width: 100%;
-    height: 600px
+    /* height: 600px */
 }
 
 footer {
@@ -674,7 +670,7 @@ footer .enderecoFooter {
     }
 
     video {
-        width: 382px;
+        width: 100%;
     }
 
     .countdown {
@@ -714,5 +710,29 @@ footer .enderecoFooter {
     .ul_headTop li .fone {
         font-size: 14px;
         margin-left: -40px;
+    }
+
+    .todo-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card-movie img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .card-movie_2 img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .card-plano {
+        margin-bottom: 20%;
+    }
+
+    .text-movies {
+        text-align: center;
+        margin: 30px;
     }
 }
