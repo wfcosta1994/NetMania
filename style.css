@@ -17,7 +17,7 @@
 
 .headTop {
     background-color: rgb(221, 235, 235);
-    width: 45%;
+    width: 55%;
     height: 40px;
     position: absolute;
     margin-left: 8%;
@@ -55,7 +55,8 @@
 
 .ul_headTop li {
     list-style-type: none;
-    text-align: center;
+    text-align: left;
+    margin-left: 4%;
 }
 
 .ul_headTop li a {
@@ -549,7 +550,7 @@ footer nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 330px;
+    height: 250px;
 }
 
 footer h5 {
@@ -582,6 +583,18 @@ footer ul li a:hover {
 
 footer .enderecoFooter {
     color: white;
+}
+
+.termo-politica {
+    text-align: center;
+}
+
+.termo-politica a {
+    color: white;
+}
+
+.termo-politica a:hover {
+    color: #888888;
 }
 
 
@@ -728,11 +741,24 @@ footer .enderecoFooter {
     }
 
     .card-plano {
-        margin-bottom: 20%;
+        margin-bottom: 10%;
     }
 
     .text-movies {
         text-align: center;
         margin: 30px;
+    }
+
+    .linha1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer .linha1 {
+        align-items: flex-start;
+    }
+
+    footer ul li {
+        text-align: left;
     }
 }
