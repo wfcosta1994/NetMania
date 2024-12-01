@@ -722,7 +722,11 @@ footer .enderecoFooter {
 
     .ul_headTop li .fone {
         font-size: 14px;
-        margin-left: -40px;
+        margin-left: -20px;
+    }
+
+    .headTop {
+        width: 45%;
     }
 
     .todo-cards {
@@ -760,5 +764,9 @@ footer .enderecoFooter {
 
     footer ul li {
         text-align: left;
+    }
+
+    .fa {
+        padding: 5px 10px 5px 5px;
     }
 }
