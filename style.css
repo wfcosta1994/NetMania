@@ -549,7 +549,7 @@ footer ul {
 footer nav {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
     height: 250px;
 }
 
@@ -768,5 +768,9 @@ footer .enderecoFooter {
 
     .fa {
         padding: 5px 10px 5px 5px;
+    }
+
+    footer nav {
+        height: 220px;
     }
 }
