@@ -211,11 +211,10 @@
 
 #about {
     display: flex;
-    padding: 30px;
+    padding: 2rem;
 }
 
 #text-about {
-    padding: 100px;
     font-size: 15px;
 }
 
@@ -225,9 +224,14 @@
 
 #img-about {
     border-radius: 40%;
-    box-shadow: -30px 0px 0px 0px #001E5B;
+    box-shadow: -30px 10px 0px 0px #001E5B;
     transform: rotateY(30deg);
     width: 600px;
+    padding: 0.5rem;
+}
+
+#div-img-about {
+    margin-top: 1.5rem;
 }
 
 .card-preco {
@@ -391,6 +395,26 @@
     color: white;
 }
 
+#carousel-cards h3 {
+    text-align: center;
+    padding-bottom: 30px;
+    color: white;
+}
+
+#cobertura {
+    padding-top: 1rem;
+    text-align: center;
+    width: 100%;
+    height: 40rem;
+    background-image: linear-gradient(to right, #3693CA, #001E5B);
+    color: white;
+}
+
+.mapaCobertura {
+    width: 80%;
+    height: 35rem;
+}
+
 #cards-2 {
     display: grid;
     grid-auto-flow: column;
@@ -420,6 +444,16 @@
     display: none;
 }
 
+.card {
+    width: 18rem;
+}
+
+.card:hover {
+    width: 20rem;
+    margin: -0.4rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
 
 .card:hover {
     .btn-footer {
@@ -435,19 +469,6 @@
         cursor: pointer;
     }
 
-    .card-img-top-plano {
-        border: 0.5px solid;
-        padding: 5px;
-        box-shadow: 5px 5px #888888;
-
-    }
-
-    /* .card-img-top {
-        cursor: pointer;
-        animation-name: rotate;
-        animation-duration: 0.3s;
-        animation-direction: reverse;
-    } */
     .bnt-go {
         transform: translateY(-20%);
         transition: 1s ease-in-out;
@@ -773,4 +794,17 @@ footer .enderecoFooter {
     footer nav {
         height: 220px;
     }
+}
+
+#pl500 {
+    padding: 1rem;
+    text-align: center;
+    margin: 2rem;
+    width: 30rem;
+    height: 38rem;
+    background-color: #91C9FF;
+}
+
+#div_pl500 {
+    justify-items: center;
 }
