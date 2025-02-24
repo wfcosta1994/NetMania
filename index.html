@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <title>NetMania Internet</title>
 </head>
 
@@ -269,42 +270,90 @@
             <h1>Os melhores planos estão aqui </h1>
         </div>
         <div class="card-preco">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
 
-            <div class="card">
-                <img src="./img/Card.jpg" class="card-img-top-plano" alt="...">
-                <div class="card-body">
-                    <!-- <h5 class="card-title">Card title</h5> -->
-                    <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="./img/Card2.jpg" class="card-img-top-plano" alt="...">
+                            <div class="card-body">
+                                <!-- <h5 class="card-title">Card title</h5> -->
+                                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                         card's content.</p> -->
-                    <button onclick="link_plano()" class="bnt-go">Saiba Mais</button>
-                </div>
-            </div>
-            <div class="card">
-                <img src="./img/Card2.jpg" class="card-img-top-plano" alt="...">
-                <div class="card-body">
-                    <!-- <h5 class="card-title">Card title</h5>
+                                <button onclick="link_plano()" class="bnt-go">Saiba Mais</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="./img/Card3.jpg" class="card-img-top-plano" alt="...">
+                            <div class="card-body">
+                                <!-- <h5 class="card-title">Card title</h5> -->
+                                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p> -->
+                                <button onclick="link_plano()" class="bnt-go">Saiba Mais</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="./img/Card2.jpg" class="card-img-top-plano" alt="...">
+                            <div class="card-body">
+                                <!-- <h5 class="card-title">Card title</h5> -->
+                                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p> -->
+                                <button onclick="link_plano()" class="bnt-go">Saiba Mais</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="./img/Card2.jpg" class="card-img-top-plano" alt="...">
+                            <div class="card-body">
+                                <!-- <h5 class="card-title">Card title</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                         card's content.</p> -->
-                    <button onclick="link_plano()" class="bnt-go">Saiba Mais</button>
-                </div>
-            </div>
-            <div class="card">
-                <img src="./img/feed_natalFamilia.png" class="card-img-top-plano" alt="...">
-                <div class="card-body">
-                    <!-- <h5 class="card-title">Card title</h5>
+                                <button onclick="link_plano()" class="bnt-go">Saiba Mais</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="./img/feed_natalFamilia.png" class="card-img-top-plano" alt="...">
+                            <div class="card-body">
+                                <!-- <h5 class="card-title">Card title</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                         card's content.</p> -->
-                    <button onclick="link_plano()" class="bnt-go">Saiba Mais</button>
-                </div>
-            </div>
-            <div class="card">
-                <img src="./img/Card4.jpg" class="card-img-top-plano" alt="...">
-                <div class="card-body">
-                    <!-- <h5 class="card-title">Card title</h5>
+                                <button onclick="link_plano()" class="bnt-go">Saiba Mais</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="./img/Card4.jpg" class="card-img-top-plano" alt="...">
+                            <div class="card-body">
+                                <!-- <h5 class="card-title">Card title</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                         card's content.</p> -->
-                    <button onclick="link_plano()" class="bnt-go">Saiba Mais</button>
+                                <button onclick="link_plano()" class="bnt-go">Saiba Mais</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
+                <!-- Botões de navegação -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+
+                <!-- Paginação -->
+                <div class="swiper-pagination"></div>
+
             </div>
         </div>
     </div>
@@ -601,6 +650,7 @@
             </div>
         </footer>
 
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script src="index.js"></script>
 </body>
 
