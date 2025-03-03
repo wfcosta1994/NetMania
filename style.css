@@ -293,7 +293,7 @@
     }
 
     & li {
-        margin: 0.1rem;
+        margin: 0.5rem;
     }
 }
 
@@ -345,6 +345,7 @@
 #cardPlano ul {
     list-style: none;
     text-align: justify;
+    margin-bottom: 1.5rem;
 }
 
 .card:hover {
