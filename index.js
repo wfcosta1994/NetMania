@@ -59,3 +59,44 @@ function link_plano() {
 
     //precisa alterar o link
 }
+
+
+
+
+
+
+
+
+function aceitarCookies() {
+    localStorage.setItem('cookiesAceitos', 'true');
+    document.getElementById('cookie-banner').style.display = 'none';
+    location.reload(); // Recarrega a página para ativar os cookies permitidos
+}
+
+function recusarCookies() {
+    localStorage.setItem('cookiesAceitos', 'false');
+    document.getElementById('cookie-banner').style.display = 'none';
+    bloquearCookies(); // Chama a função para remover cookies opcionais
+}
+
+if (localStorage.getItem('cookiesAceitos') !== null) {
+    document.getElementById('cookie-banner').style.display = 'none';
+}
+
+function bloquearCookies() {
+    // Remove cookies não essenciais
+    document.cookie.split(";").forEach(function (c) {
+        document.cookie = c.trim().split("=")[0] + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+    });
+
+    // Remove scripts de rastreamento
+    const analytics = document.getElementById("analytics-script");
+    if (analytics) {
+        analytics.remove();
+    }
+}
+
+// Bloqueia cookies e scripts se o usuário recusou
+if (localStorage.getItem('cookiesAceitos') === 'false') {
+    bloquearCookies();
+}

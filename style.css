@@ -280,7 +280,7 @@
     width: 20rem;
     height: 27rem;
     font-size: 14px;
-    background-image: linear-gradient(to right, #050871, #0c097a, #070874);
+    background-image: linear-gradient(to right, #0d117e, #0c097a, #070874);
     color: white;
     border-radius: 2rem !important;
 
@@ -346,8 +346,6 @@
     height: 0.4rem;
 }
 
-
-
 .cardPlano ul {
     list-style: none;
     text-align: justify;
@@ -378,7 +376,8 @@
 }
 
 .cards-feature:hover {
-    transform: translateY(-10%);
+    transform: scale(1.05);
+    /* transform: translateY(-10%); */
 }
 
 .card-col-2 {
@@ -605,15 +604,15 @@
 }
 
 .videos {
-    background: url("./img/BANNER-MENINA.png");
+    /* background: url("./img/BANNER-MENINA.png");
     position: relative;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    z-index: 1;
+    z-index: 1; */
     width: 100%;
-    /* height: 600px */
+    height: 650px;
 }
 
 footer {
@@ -674,11 +673,13 @@ footer .enderecoFooter {
 }
 
 .termo-politica {
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .termo-politica a {
     color: white;
+    margin: 1rem;
 }
 
 .termo-politica a:hover {
