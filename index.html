@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>NetMania Internet</title>
 </head>
 
@@ -45,9 +45,9 @@
     </div>
 
     <!-- a classe: sticky-top fixa barra da navbar-->
-    <nav class="navbar navbar-expand-lg sticky-top" style="background-color:#ffffff; height: 40px;">
+    <nav class="navbar navbar-expand-lg sticky-top" style="background-color:#ffffff; height: 60px;">
         <div class="container-fluid">
-            <img class="logo" src="img/nomeLogo.jpg" alt="">
+            <a href=""><img class="logo" src="img/nomeLogo.jpg" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -55,13 +55,22 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#card-preco-head">Planos</a>
+                        <a class="nav-link active" aria-current="page" href="#card-preco-head">Para Sua Casa</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">Sobre</a>
+                        <a class="nav-link active" aria-current="page" href="#card-preco-head">Para Sua Empresa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Quem Somos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#cobertura">Cobertura</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cobertura">Produtos e Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cobertura">Vendedor Parceiro </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Trabalhe Conosco</a>
@@ -77,7 +86,7 @@
                             <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
                     </li> -->
-                    <button id="btn_GetQuote">Acessar Conta</a><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    <button id="btn_GetQuote">Minha Netmania</a><svg xmlns="http://www.w3.org/2000/svg" width="16"
                             height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
                             <path fill-rule="evenodd"
                                 d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
@@ -275,75 +284,187 @@
 
                     <div class="swiper-slide">
                         <div class="card">
-                            <img src="./img/Card2.jpg" class="card-img-top-plano" alt="...">
-                            <div class="card-body">
-                                <!-- <h5 class="card-title">Card title</h5> -->
-                                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p> -->
-                                <button onclick="link_plano()" class="bnt-go">Saiba Mais</button>
-                            </div>
+                            <a href="https://abrir.link/aWdtR" target="_blank">
+                                <div id="cardPlano">
+                                    <p class="descricaoPlano">
+                                        <span class="velocidade">400</span>
+                                        <span class="medVelocidade">mega</span>
+                                    </p>
+
+                                    <ul>
+                                        <li><i class="fas fa-download"></i> Download 400 Mbps</li>
+                                        <li><i class="fas fa-upload"></i> Upload 200 Mbps</li>
+                                        <li><i class="fas fa-tools"></i> Instalação Grátis</li>
+                                        <li><i class="fas fa-wifi"></i> Wi-Fi Plus</li>
+                                        <li><i class="fas fa-users"></i> Conexão para sua família</li>
+                                        <li><i class="fas fa-headset"></i> Suporte de DOM a DOM</li>
+                                    </ul>
+                                    <h1 class="valorOferta">OFERTA</h1>
+                                    <p class="valorPlano">
+                                        <span class="sifrao">R$</span>
+                                        <span class="valor">89</span>
+                                        <span class="subValor">,90</span>
+                                    </p>
+                                    <h2>No cartão recorrente</h2>
+                                    <img src="img/logo-netmania.JPG" alt="">
+                                </div>
+                            </a>
                         </div>
                     </div>
 
                     <div class="swiper-slide">
                         <div class="card">
-                            <img src="./img/Card3.jpg" class="card-img-top-plano" alt="...">
-                            <div class="card-body">
-                                <!-- <h5 class="card-title">Card title</h5> -->
-                                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p> -->
-                                <button onclick="link_plano()" class="bnt-go">Saiba Mais</button>
-                            </div>
-                        </div>
-                    </div>
+                            <a href="https://abrir.link/aWdtR" target="_blank">
+                                <div id="cardPlano">
+                                    <p class="descricaoPlano">
+                                        <span class="velocidade">500</span>
+                                        <span class="medVelocidade">mega</span>
+                                    </p>
 
-                    <div class="swiper-slide">
-                        <div class="card">
-                            <img src="./img/Card2.jpg" class="card-img-top-plano" alt="...">
-                            <div class="card-body">
-                                <!-- <h5 class="card-title">Card title</h5> -->
-                                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p> -->
-                                <button onclick="link_plano()" class="bnt-go">Saiba Mais</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="card">
-                            <img src="./img/Card2.jpg" class="card-img-top-plano" alt="...">
-                            <div class="card-body">
-                                <!-- <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p> -->
-                                <button onclick="link_plano()" class="bnt-go">Saiba Mais</button>
-                            </div>
+                                    <ul>
+                                        <li><i class="fas fa-download"></i> Download 500 Mbps</li>
+                                        <li><i class="fas fa-upload"></i> Upload 250 Mbps</li>
+                                        <li><i class="fas fa-tools"></i> Instalação Grátis</li>
+                                        <li><i class="fas fa-wifi"></i> Wi-Fi Plus / Wifi 6</li>
+                                        <li><i class="fas fa-users"></i> Perfeito para redes sociais</li>
+                                        <li><i class="fas fa-headset"></i> Suporte de Domingo a Domingo</li>
+                                    </ul>
+                                    <h1 class="valorOferta">OFERTA</h1>
+                                    <p class="valorPlano">
+                                        <span class="sifrao">R$</span>
+                                        <span class="valor">99</span>
+                                        <span class="subValor">,90</span>
+                                    </p>
+                                    <h2>PLANO MENSAL FIXO</h2>
+                                    <img src="img/logo-netmania.JPG" alt="">
+                                </div>
+                            </a>
                         </div>
 
                     </div>
 
                     <div class="swiper-slide">
                         <div class="card">
-                            <img src="./img/feed_natalFamilia.png" class="card-img-top-plano" alt="...">
-                            <div class="card-body">
-                                <!-- <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p> -->
-                                <button onclick="link_plano()" class="bnt-go">Saiba Mais</button>
-                            </div>
+                            <a href="https://abrir.link/aWdtR" target="_blank">
+                                <div id="cardPlano">
+                                    <p class="descricaoPlano">
+                                        <span class="velocidade">600</span>
+                                        <span class="medVelocidade">mega</span>
+                                    </p>
+
+                                    <ul>
+                                        <li><i class="fas fa-download"></i> Download 600 Mbps</li>
+                                        <li><i class="fas fa-upload"></i> Upload 300 Mbps</li>
+                                        <li><i class="fas fa-tools"></i> Instalação Grátis</li>
+                                        <li><i class="fas fa-wifi"></i> Wi-Fi Plus / Wifi 6</li>
+                                        <li><i class="fas fa-users"></i> Perfeito para filmes e séries</li>
+                                        <li><i class="fas fa-headset"></i> Suporte de Domingo a Domingo</li>
+                                    </ul>
+                                    <h1 class="valorOferta">OFERTA</h1>
+                                    <p class="valorPlano">
+                                        <span class="sifrao">R$</span>
+                                        <span class="valor">109</span>
+                                        <span class="subValor">,90</span>
+                                    </p>
+                                    <h2>PLANO FIXO MENSAL</h2>
+                                    <img src="img/logo-netmania.JPG" alt="">
+                                </div>
+                            </a>
                         </div>
+
                     </div>
 
                     <div class="swiper-slide">
                         <div class="card">
-                            <img src="./img/Card4.jpg" class="card-img-top-plano" alt="...">
-                            <div class="card-body">
-                                <!-- <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p> -->
-                                <button onclick="link_plano()" class="bnt-go">Saiba Mais</button>
-                            </div>
+                            <a href="https://abrir.link/aWdtR" target="_blank">
+                                <div id="cardPlano">
+                                    <p class="descricaoPlano">
+                                        <span class="velocidade">700</span>
+                                        <span class="medVelocidade">mega</span>
+                                    </p>
+
+                                    <ul>
+                                        <li><i class="fas fa-download"></i> Download 700 Mbps</li>
+                                        <li><i class="fas fa-upload"></i> Upload 350 Mbps</li>
+                                        <li><i class="fas fa-tools"></i> Instalação Grátis</li>
+                                        <li><i class="fas fa-wifi"></i> Wi-Fi Plus</li>
+                                        <li><i class="fas fa-users"></i> Conexão para sua família</li>
+                                        <li><i class="fas fa-headset"></i> Suporte de Domingo a Domingo</li>
+                                    </ul>
+                                    <h1 class="valorOferta">OFERTA</h1>
+                                    <p class="valorPlano">
+                                        <span class="sifrao">R$</span>
+                                        <span class="valor">139</span>
+                                        <span class="subValor">,90</span>
+                                    </p>
+                                    <!-- <h2>No cartão recorrente</h2> -->
+                                    <img src="img/logo-netmania.JPG" alt="">
+                                </div>
+                            </a>
                         </div>
+
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <a href="https://abrir.link/aWdtR" target="_blank">
+                                <div id="cardPlano">
+                                    <p class="descricaoPlano">
+                                        <span class="velocidade">800</span>
+                                        <span class="medVelocidade">mega</span>
+                                    </p>
+
+                                    <ul>
+                                        <li><i class="fas fa-download"></i> Download 800 Mbps</li>
+                                        <li><i class="fas fa-upload"></i> Upload 400 Mbps</li>
+                                        <li><i class="fas fa-tools"></i> Instalação Grátis</li>
+                                        <li><i class="fas fa-wifi"></i> Wi-Fi Plus / Wifi 6</li>
+                                        <li><i class="fas fa-users"></i> Perfeito para gamer</li>
+                                        <li><i class="fas fa-headset"></i> Suporte de Domingo a Domingo</li>
+                                    </ul>
+                                    <h1 class="valorOferta">OFERTA</h1>
+                                    <p class="valorPlano">
+                                        <span class="sifrao">R$</span>
+                                        <span class="valor">169</span>
+                                        <span class="subValor">,90</span>
+                                    </p>
+                                    <h2>R$ 159,90 no cartão recorrente</h2>
+                                    <img src="img/logo-netmania.JPG" alt="">
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <a href="https://abrir.link/aWdtR" target="_blank">
+                                <div id="cardPlano">
+                                    <p class="descricaoPlano">
+                                        <span class="velocidade">1</span>
+                                        <span class="medVelocidade">GIGA</span>
+                                    </p>
+
+                                    <ul>
+                                        <li><i class="fas fa-download"></i> Download 1000 Mbps</li>
+                                        <li><i class="fas fa-upload"></i> Upload 500 Mbps</li>
+                                        <li><i class="fas fa-tools"></i> Instalação Grátis</li>
+                                        <li><i class="fas fa-wifi"></i> Wifi 6 / Wi-Fi MESH</li>
+                                        <li><i class="fas fa-users"></i> + TELECINE</li>
+                                        <li><i class="fas fa-headset"></i> Suporte de Domingo a Domingo</li>
+                                    </ul>
+                                    <h1 class="valorOferta">OFERTA</h1>
+                                    <p class="valorPlano">
+                                        <span class="sifrao">R$</span>
+                                        <span class="valor">199</span>
+                                        <span class="subValor">,90</span>
+                                    </p>
+                                    <h2>R$ 189,90 no cartão recorrente</h2>
+                                    <img src="img/logo-netmania.JPG" alt="">
+                                </div>
+                            </a>
+                        </div>
+
                     </div>
                 </div>
 

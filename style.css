@@ -111,13 +111,13 @@
 
 .logo {
     margin: 1%;
-    width: 100px;
-    height: 30px;
+    width: 8rem;
+    height: 2rem;
 }
 
 .capa {
     width: 100%;
-    height: 45rem;
+    height: 40rem;
 }
 
 .nav-link:hover {
@@ -206,7 +206,7 @@
 }
 
 .nav-item {
-    margin-right: 100px;
+    margin-right: 2rem;
 }
 
 #about {
@@ -234,6 +234,10 @@
     margin-top: 1.5rem;
 }
 
+.card-group .card {
+    margin: 2rem;
+}
+
 .card-preco {
     display: flex;
     justify-content: center;
@@ -241,18 +245,111 @@
 }
 
 #card-preco-head {
-    height: 550px;
+    height: 40rem;
     text-align: center;
     color: white;
     background-image: linear-gradient(to right, #001E5B, #3693CA)
 }
 
 #card-preco-head h2 {
-    padding-top: 35px;
+    padding-top: 2rem;
 }
 
 .card {
-    margin: 10px;
+    width: 19rem;
+    margin: 1rem;
+    border-radius: 2rem !important;
+    border: none !important;
+}
+
+.card a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.swiper-slide {
+    margin-top: 0.3rem;
+    height: 30rem !important;
+}
+
+#cardPlano {
+    height: 26rem;
+    font-size: 12px;
+    background-image: linear-gradient(to right, #050871, #0c097a, #070874);
+    color: white;
+    border-radius: 2rem !important;
+
+    & h1 {
+        font-size: 20px;
+    }
+
+    & h2 {
+        margin-top: -3.5rem;
+        font-size: 10px;
+    }
+
+    & img {
+        height: 3.5rem;
+    }
+
+    & li {
+        margin: 0.1rem;
+    }
+}
+
+.descricaoPlano {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: bold;
+
+    & .velocidade {
+        font-size: 3.5rem;
+        height: 2.8rem;
+        color: #00C7F6;
+    }
+
+    & .medVelocidade {
+        font-size: 2rem;
+    }
+}
+
+.valorPlano {
+    color: #00C7F6;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    & .sifrao {
+        font-size: 2rem;
+    }
+
+    & .valor {
+        margin-top: -1rem;
+        font-size: 4rem;
+    }
+
+    & .subValor {
+        font-size: 2rem;
+
+    }
+}
+
+.valorOferta {
+    height: 0.4rem;
+}
+
+
+
+#cardPlano ul {
+    list-style: none;
+    text-align: justify;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 .feature {
@@ -316,16 +413,6 @@
 
 .sub-countdown {
     margin: 50px;
-}
-
-.sub-card {
-    background-color: #3693CA;
-    width: 230px;
-    height: 100px;
-    border-radius: 10px;
-    margin-top: 240px;
-    position: absolute;
-    margin-left: 15px;
 }
 
 .sub-card button {
@@ -444,38 +531,6 @@
     display: none;
 }
 
-.card {
-    width: 18rem;
-}
-
-.card:hover {
-    width: 20rem;
-    margin: -0.4rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
-
-.card:hover {
-    .btn-footer {
-        transform: translateY(-20%);
-        transition: 1s ease-in-out;
-        background-color: #001E5B;
-    }
-
-    .card-img-top {
-        /* transform: rotate(360deg) rotateY(360deg); */
-        transform: rotateY(180deg);
-        transition-duration: 0.5s;
-        cursor: pointer;
-    }
-
-    .bnt-go {
-        transform: translateY(-20%);
-        transition: 1s ease-in-out;
-        background-color: #001E5B;
-    }
-}
-
 .btn-footer {
     color: white;
     border: none;
@@ -532,7 +587,7 @@
     color: white;
     border: none;
     border-radius: 20px;
-    background-color: #3693CA;
+    background-color: #001E5B;
     width: 150px;
     height: 30px;
 }
