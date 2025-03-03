@@ -280,7 +280,7 @@
     width: 20rem;
     height: 27rem;
     font-size: 14px;
-    background-image: linear-gradient(to right, #0d117e, #0c097a, #070874);
+    background-image: linear-gradient(to right, #022066, #0c097a, #070874);
     color: white;
     border-radius: 2rem !important;
 
@@ -556,7 +556,7 @@
     height: 460px;
     padding-top: 50px;
     color: white;
-    background-image: linear-gradient(to right, #3693CA, #001E5B)
+    background-image: linear-gradient(to right, #3693CA, #022066)
 }
 
 .bnt-mail {
@@ -618,7 +618,7 @@
 footer {
     padding: 2%;
     width: 100%;
-    background-image: linear-gradient(to right, #001E5B, #3693CA);
+    background-image: linear-gradient(to right, #3693CA, #001E5B);
 }
 
 footer .linha1 {
@@ -628,6 +628,9 @@ footer .linha1 {
 }
 
 footer ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     list-style: none;
     margin: 0px;
     padding: 0px;
@@ -636,8 +639,7 @@ footer ul {
 footer nav {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
-    height: 250px;
+    height: 12rem;
 }
 
 footer h5 {
@@ -645,7 +647,7 @@ footer h5 {
     color: white;
     font-weight: 700;
     font-size: 15px;
-    background-color: black;
+    background-color: #022066;
     border-radius: 10px;
     padding: 10px;
     margin-bottom: 10px;
@@ -656,7 +658,7 @@ footer ul li {
     color: white;
     font-weight: 600;
     font-size: 15px;
-    margin: 10px 0px 10px 0px;
+    margin: 5px 0px 5px 0px;
 }
 
 footer ul li a {
@@ -669,7 +671,15 @@ footer ul li a:hover {
 }
 
 footer .enderecoFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     color: white;
+
+    & img {
+        width: 10rem;
+        margin: 10px;
+    }
 }
 
 .termo-politica {
