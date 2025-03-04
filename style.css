@@ -121,7 +121,7 @@
 }
 
 .nav-link:hover {
-    color: #ee763f !important;
+    color: #3693CA !important;
 }
 
 .nav-link {
@@ -643,13 +643,13 @@ footer nav {
 }
 
 footer h5 {
-    text-align: center;
+    /* text-align: center; */
     color: white;
     font-weight: 700;
     font-size: 15px;
-    background-color: #022066;
-    border-radius: 10px;
-    padding: 10px;
+    /* background-color: #022066; */
+    /* border-radius: 10px; */
+    /* padding: 10px; */
     margin-bottom: 10px;
 }
 
@@ -667,8 +667,9 @@ footer ul li a {
 }
 
 footer ul li a:hover {
-    color: #888888;
+    color: #001E5B;
 }
+
 
 footer .enderecoFooter {
     display: flex;
@@ -682,6 +683,29 @@ footer .enderecoFooter {
     }
 }
 
+.redesSociais {
+    list-style: none;
+    padding: 0;
+}
+
+.redesSociais li {
+    display: flex;
+    align-items: center;
+    gap: 1px;
+    margin: 0;
+}
+
+.redesSociais .fa {
+    width: 2rem;
+    color: white !important;
+    margin-left: -0.5rem;
+}
+
+.redesSociais a {
+    color: white;
+    text-decoration: none;
+}
+
 .termo-politica {
     display: flex;
     justify-content: center;
@@ -689,16 +713,12 @@ footer .enderecoFooter {
 
 .termo-politica a {
     color: white;
-    margin: 1rem;
+    margin: 0.2rem;
 }
 
 .termo-politica a:hover {
-    color: #888888;
+    color: #001E5B;
 }
-
-
-
-
 
 @media screen and (max-width: 480px) {
     .logo {
