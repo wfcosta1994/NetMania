@@ -623,8 +623,13 @@ footer {
 
 footer .linha1 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
+
+    & #telefone {
+        font-size: 30px;
+        font-weight: bold;
+    }
 }
 
 footer ul {
@@ -720,6 +725,10 @@ footer .enderecoFooter {
     color: #001E5B;
 }
 
+#navbarNavDropdown {
+    font-size: 14px;
+}
+
 @media screen and (max-width: 480px) {
     .logo {
         margin-top: -5px;
@@ -733,7 +742,8 @@ footer .enderecoFooter {
 
     #navbarNavDropdown {
         background-color: white;
-        height: 15rem;
+        height: 20.5rem;
+        /* padding-right: 5rem !important; */
     }
 
     .nav-item {
@@ -743,6 +753,7 @@ footer .enderecoFooter {
 
     .container-fluid {
         padding-left: 0px !important;
+        height: 1.5rem;
     }
 
     #about {
@@ -764,7 +775,7 @@ footer .enderecoFooter {
 
     #about #img-about {
         height: 300px;
-        width: 300px;
+        width: 100%;
     }
 
     #card-preco-head {
