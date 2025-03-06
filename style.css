@@ -729,6 +729,11 @@ footer .enderecoFooter {
     font-size: 14px;
 }
 
+.mvv {
+    padding: 2rem;
+    background-color: #f7fafb;
+}
+
 @media screen and (max-width: 480px) {
     .logo {
         margin-top: -5px;
