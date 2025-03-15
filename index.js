@@ -94,6 +94,8 @@ if (localStorage.getItem('cookiesAceitos') === 'false') {
     bloquearCookies();
 }
 
+// Para ajudar na conexão do banco de dados MySQL
+
 document.querySelector("form.indiqueGanhe").addEventListener("submit", function (event) {
     event.preventDefault();
 

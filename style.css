@@ -223,8 +223,8 @@
 }
 
 #img-about {
-    border-radius: 40%;
-    box-shadow: -30px 10px 0px 0px #001E5B;
+    border-radius: 30%;
+    box-shadow: -20px 10px 0px 0px #001E5B;
     transform: rotateY(30deg);
     width: 600px;
     padding: 0.5rem;
@@ -280,9 +280,13 @@
     width: 20rem;
     height: 27rem;
     font-size: 14px;
-    background-image: linear-gradient(to right, #022066, #0c097a, #070874);
+    /* background-image: linear-gradient(to right, #022066, #0c097a, #070874); */
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     color: white;
     border-radius: 2rem !important;
+    /* border: 0.1rem solid rgba(255, 255, 255, 0.3); */
 
     & h1 {
         font-size: 20px;
@@ -303,7 +307,7 @@
 }
 
 .descricaoPlano {
-    margin-top: 1.3rem;
+    margin-top: 1rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -405,7 +409,7 @@
 
 #img-feature {
     border-radius: 20px;
-    width: 700px;
+    /* width: 700px; */
     height: 500px;
 }
 
