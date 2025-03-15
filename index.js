@@ -60,13 +60,6 @@ function link_plano() {
     //precisa alterar o link
 }
 
-
-
-
-
-
-
-
 function aceitarCookies() {
     localStorage.setItem('cookiesAceitos', 'true');
     document.getElementById('cookie-banner').style.display = 'none';
@@ -100,3 +93,31 @@ function bloquearCookies() {
 if (localStorage.getItem('cookiesAceitos') === 'false') {
     bloquearCookies();
 }
+
+document.querySelector("form.indiqueGanhe").addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const formData = {
+        cliente: document.querySelector('input[name="cliente"]').value,
+        cpf: document.querySelector('input[name="cpf"]').value,
+        telefone: document.querySelector('input[name="telefone"]').value,
+        indicado: document.querySelector('input[name="indicado"]').value,
+        telefone_indicado: document.querySelector('input[name="telefone_indicado"]').value
+    };
+
+    console.log("Dados enviados:", formData);  // Verifique no console
+
+    fetch("http://localhost:3000/salvar", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData)
+    })
+        .then(response => response.json())
+        .then(data => {
+            console.log("Resposta do servidor:", data);  // Verifique a resposta do servidor
+            alert(data.message);
+        })
+        .catch(error => {
+            console.error("Erro ao enviar:", error);
+        });
+});

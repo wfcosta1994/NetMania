@@ -952,3 +952,26 @@ footer .enderecoFooter {
     margin: 2rem;
     color: red;
 }
+
+.indiqueGanhe {
+    display: grid;
+    margin-bottom: 0.5rem;
+    justify-items: center;
+
+    & h1 {
+        margin-bottom: 1rem;
+        font-size: 2rem;
+    }
+
+    & button {
+        margin-top: 2rem;
+    }
+
+    & input {
+        padding-left: 0.4rem;
+    }
+
+    & label {
+        margin-top: -1rem;
+    }
+}
