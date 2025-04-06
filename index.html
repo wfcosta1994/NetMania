@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>NetMania Internet</title>
@@ -47,7 +47,7 @@
     <!-- a classe: sticky-top fixa barra da navbar-->
     <nav class="navbar navbar-expand-lg sticky-top" style="background-color:#ffffff; height: 60px;">
         <div class="container-fluid">
-            <a href=""><img class="logo" src="img/nomeLogo.jpg" alt=""></a>
+            <a href=""><img class="logo" src="img/logoSemFundo.png" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -89,11 +89,14 @@
                             <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
                     </li> -->
-                    <button id="btn_GetQuote">Minha Netmania</a><svg xmlns="http://www.w3.org/2000/svg" width="16"
-                            height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
-                        </svg></button>
+                    <button id="btn_GetQuote">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor"
+                            stroke-width="1.5" class="bi bi-person" viewBox="0 0 16 16">
+                            <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                            <path d="M8 9a5 5 0 0 0-5 5v.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V14a5 5 0 0 0-5-5z" />
+                        </svg>
+                        Minha Netmania
+                    </button>
                 </ul>
             </div>
         </div>
@@ -280,20 +283,21 @@
     <div id="card-preco-head">
         <div>
             <h2>PLANOS</h2>
-            <h1>Os melhores planos estão aqui </h1>
+            <h1>Os melhores planos estão aqui</h1>
         </div>
+
         <div class="card-preco">
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
 
-                    <div class="swiper-slide">
+                    <!-- PLANO 400 MEGA -->
+                    <div class="swiper-slide card-destaque">
                         <a href="https://abrir.link/aWdtR" target="_blank">
                             <div class="cardPlano">
                                 <p class="descricaoPlano">
                                     <span class="velocidade">400</span>
                                     <span class="medVelocidade">mega</span>
                                 </p>
-
                                 <ul>
                                     <li><i class="fas fa-download"></i> Download 400 Mbps</li>
                                     <li><i class="fas fa-upload"></i> Upload 200 Mbps</li>
@@ -313,21 +317,21 @@
                         </a>
                     </div>
 
-                    <div class="swiper-slide">
+                    <!-- PLANO 500 MEGA -->
+                    <div class="swiper-slide card-destaque">
                         <a href="https://abrir.link/aWdtR" target="_blank">
                             <div class="cardPlano">
                                 <p class="descricaoPlano">
                                     <span class="velocidade">500</span>
                                     <span class="medVelocidade">mega</span>
                                 </p>
-
                                 <ul>
                                     <li><i class="fas fa-download"></i> Download 500 Mbps</li>
                                     <li><i class="fas fa-upload"></i> Upload 250 Mbps</li>
                                     <li><i class="fas fa-tools"></i> Instalação Grátis</li>
                                     <li><i class="fas fa-wifi"></i> Wi-Fi Plus / Wifi 6</li>
                                     <li><i class="fas fa-users"></i> Perfeito para redes sociais</li>
-                                    <li><i class="fas fa-headset"></i> Suporte de Domingo a Domingo</li>
+                                    <li><i class="fas fa-headset"></i> Suporte de DOM a DOM</li>
                                 </ul>
                                 <h1 class="valorOferta">OFERTA</h1>
                                 <p class="valorPlano">
@@ -340,21 +344,21 @@
                         </a>
                     </div>
 
-                    <div class="swiper-slide">
+                    <!-- PLANO 600 MEGA -->
+                    <div class="swiper-slide card-destaque">
                         <a href="https://abrir.link/aWdtR" target="_blank">
                             <div class="cardPlano">
                                 <p class="descricaoPlano">
                                     <span class="velocidade">600</span>
                                     <span class="medVelocidade">mega</span>
                                 </p>
-
                                 <ul>
                                     <li><i class="fas fa-download"></i> Download 600 Mbps</li>
                                     <li><i class="fas fa-upload"></i> Upload 300 Mbps</li>
                                     <li><i class="fas fa-tools"></i> Instalação Grátis</li>
                                     <li><i class="fas fa-wifi"></i> Wi-Fi Plus / Wifi 6</li>
                                     <li><i class="fas fa-users"></i> Perfeito para filmes e séries</li>
-                                    <li><i class="fas fa-headset"></i> Suporte de Domingo a Domingo</li>
+                                    <li><i class="fas fa-headset"></i> Suporte de DOM a DOM</li>
                                 </ul>
                                 <h1 class="valorOferta">OFERTA</h1>
                                 <p class="valorPlano">
@@ -367,21 +371,21 @@
                         </a>
                     </div>
 
-                    <div class="swiper-slide">
+                    <!-- PLANO 700 MEGA -->
+                    <div class="swiper-slide card-destaque">
                         <a href="https://abrir.link/aWdtR" target="_blank">
                             <div class="cardPlano">
                                 <p class="descricaoPlano">
                                     <span class="velocidade">700</span>
                                     <span class="medVelocidade">mega</span>
                                 </p>
-
                                 <ul>
                                     <li><i class="fas fa-download"></i> Download 700 Mbps</li>
                                     <li><i class="fas fa-upload"></i> Upload 350 Mbps</li>
                                     <li><i class="fas fa-tools"></i> Instalação Grátis</li>
                                     <li><i class="fas fa-wifi"></i> Wi-Fi Plus</li>
                                     <li><i class="fas fa-users"></i> Conexão para sua família</li>
-                                    <li><i class="fas fa-headset"></i> Suporte de Domingo a Domingo</li>
+                                    <li><i class="fas fa-headset"></i> Suporte de DOM a DOM</li>
                                 </ul>
                                 <h1 class="valorOferta">OFERTA</h1>
                                 <p class="valorPlano">
@@ -389,26 +393,25 @@
                                     <span class="valor">139</span>
                                     <span class="subValor">,90</span>
                                 </p>
-                                <!-- <h2>No cartão recorrente</h2> -->
                             </div>
                         </a>
                     </div>
 
-                    <div class="swiper-slide">
+                    <!-- PLANO 800 MEGA -->
+                    <div class="swiper-slide card-destaque">
                         <a href="https://abrir.link/aWdtR" target="_blank">
                             <div class="cardPlano">
                                 <p class="descricaoPlano">
                                     <span class="velocidade">800</span>
                                     <span class="medVelocidade">mega</span>
                                 </p>
-
                                 <ul>
                                     <li><i class="fas fa-download"></i> Download 800 Mbps</li>
                                     <li><i class="fas fa-upload"></i> Upload 400 Mbps</li>
                                     <li><i class="fas fa-tools"></i> Instalação Grátis</li>
                                     <li><i class="fas fa-wifi"></i> Wi-Fi Plus / Wifi 6</li>
                                     <li><i class="fas fa-users"></i> Perfeito para gamer</li>
-                                    <li><i class="fas fa-headset"></i> Suporte de Domingo a Domingo</li>
+                                    <li><i class="fas fa-headset"></i> Suporte de DOM a DOM</li>
                                 </ul>
                                 <h1 class="valorOferta">OFERTA</h1>
                                 <p class="valorPlano">
@@ -421,21 +424,21 @@
                         </a>
                     </div>
 
-                    <div class="swiper-slide">
+                    <!-- PLANO 1 GIGA -->
+                    <div class="swiper-slide card-destaque">
                         <a href="https://abrir.link/aWdtR" target="_blank">
                             <div class="cardPlano">
                                 <p class="descricaoPlano">
                                     <span class="velocidade">1</span>
                                     <span class="medVelocidade">GIGA</span>
                                 </p>
-
                                 <ul>
                                     <li><i class="fas fa-download"></i> Download 1000 Mbps</li>
                                     <li><i class="fas fa-upload"></i> Upload 500 Mbps</li>
                                     <li><i class="fas fa-tools"></i> Instalação Grátis</li>
                                     <li><i class="fas fa-wifi"></i> Wifi 6 / Wi-Fi MESH</li>
                                     <li><i class="fas fa-users"></i> + TELECINE</li>
-                                    <li><i class="fas fa-headset"></i> Suporte de Domingo a Domingo</li>
+                                    <li><i class="fas fa-headset"></i> Suporte de DOM a DOM</li>
                                 </ul>
                                 <h1 class="valorOferta">OFERTA</h1>
                                 <p class="valorPlano">
@@ -446,8 +449,8 @@
                                 <h2>R$ 189,90 no cartão recorrente</h2>
                             </div>
                         </a>
-
                     </div>
+
                 </div>
 
                 <!-- Botões de navegação -->
@@ -456,21 +459,18 @@
 
                 <!-- Paginação -->
                 <div class="swiper-pagination"></div>
-
             </div>
         </div>
     </div>
 
-    <div id="cobertura">
+
+    <!-- <div id="cobertura">
         <h1>Conheça Nossa Área de Cobertura</h1>
 
         <iframe class="mapaCobertura" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"
             src="https://www.google.com/maps/d/u/0/embed?mid=1zCWAmWIChZ19nHl_Z7n3ACPIApTYEVY&ehbc=2E312F">
         </iframe>
-
-
-
-    </div>
+    </div> -->
 
     <div class="feature">
         <div class="subfeature">
@@ -524,7 +524,7 @@
         </div>
 
     </div>
-    <div class="countdown">
+    <!-- <div class="countdown">
         <div class="sub-countdown">
             <img src="https://live.themewild.com/cablehub/assets/img/icon/branch.svg" alt="" style="width: 60px;">
             <h1>+ 5.000</h1>
@@ -545,7 +545,7 @@
             <h1>+ 15</h1>
             <h3>Anos de Experiência</h3>
         </div>
-    </div>
+    </div> -->
 
     <div class="videos">
         <iframe width="100%" height="650" src="https://www.youtube.com/embed/Z9K4e1UgUH4?si=FES89s6A84ghR68d"
@@ -702,8 +702,8 @@
     <footer>
         <div class="linha1">
             <div class="enderecoFooter">
-                <img src="img/nomeLogo.jpg" alt="">
-                <h4>Você Sempre Conectado</h4>
+                <img src="img/logoSemFundo.png" alt="">
+                <h4>Você Sempre Conectado!</h4>
                 <p>Av. Lourenço Vieira da Silva, Prédio Comercial Bitcoin, <br>
                     Sala N° 19 - São Cristovão/São Luis - MA. <br>
                 </p>

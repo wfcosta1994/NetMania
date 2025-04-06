@@ -1,4 +1,3 @@
-
 //Arquivo para conexão do banco de dados MySQL
 const express = require("express");
 const mysql = require("mysql");

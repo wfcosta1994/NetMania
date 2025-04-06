@@ -1,25 +1,52 @@
 // Aguarda o DOM carregar completamente antes de inicializar o Swiper
-document.addEventListener("DOMContentLoaded", function () {
-    var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 4, // Exibe 4 cards por vez
-        spaceBetween: 20, // Espaçamento entre os cards
-        loop: true, // Ativa rotação infinita
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-        breakpoints: {
-            1024: { slidesPerView: 4 }, // 4 cards para telas grandes
-            768: { slidesPerView: 3 },  // 3 cards para tablets
-            480: { slidesPerView: 2 },  // 2 cards para celulares médios
-            320: { slidesPerView: 1 }   // 1 card para celulares pequenos
+function highlightCenterSlide() {
+    const slides = document.querySelectorAll('.swiper-slide');
+    slides.forEach(slide => slide.classList.remove('card-destaque'));
+
+    const visibleSlides = [];
+    slides.forEach(slide => {
+        const rect = slide.getBoundingClientRect();
+        if (rect.right > 0 && rect.left < window.innerWidth) {
+            visibleSlides.push({
+                slide: slide,
+                centerDist: Math.abs(rect.left + rect.width / 2 - window.innerWidth / 2)
+            });
         }
     });
+
+    if (visibleSlides.length > 0) {
+        visibleSlides.sort((a, b) => a.centerDist - b.centerDist);
+        visibleSlides[0].slide.classList.add('card-destaque');
+    }
+}
+
+// Inicialização do Swiper
+const swiper = new Swiper('.mySwiper', {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 20,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+    },
+    breakpoints: {
+        640: { slidesPerView: 1 },
+        768: { slidesPerView: 2 },
+        1024: { slidesPerView: 3 }
+    },
+    on: {
+        init: () => highlightCenterSlide(),
+        transitionEnd: () => highlightCenterSlide()
+    }
 });
+
+// Atualiza o destaque se a janela for redimensionada
+window.addEventListener('resize', highlightCenterSlide);
+
 
 
 
