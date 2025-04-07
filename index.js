@@ -24,7 +24,7 @@ function highlightCenterSlide() {
 const swiper = new Swiper('.mySwiper', {
     loop: true,
     slidesPerView: 1,
-    spaceBetween: 20,
+    spaceBetween: 0.1,
     pagination: {
         el: '.swiper-pagination',
         clickable: true
@@ -34,9 +34,9 @@ const swiper = new Swiper('.mySwiper', {
         prevEl: '.swiper-button-prev'
     },
     breakpoints: {
-        640: { slidesPerView: 1 },
-        768: { slidesPerView: 2 },
-        1024: { slidesPerView: 3 }
+        640: { slidesPerView: 1 }, //Para definir a quantidade de card que vai aparecer na tela
+        768: { slidesPerView: 2 }, //Para definir a quantidade de card que vai aparecer na tela
+        1024: { slidesPerView: 3 } //Para definir a quantidade de card que vai aparecer na tela
     },
     on: {
         init: () => highlightCenterSlide(),

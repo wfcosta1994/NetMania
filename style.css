@@ -249,10 +249,10 @@
     display: flex;
     justify-content: center;
     padding: 5px;
-    margin-top: 0px;
+    margin-top: -50px;
     position: relative;
     /* O cod abaixo ajuja tambem descer a barra de indicação dos cards */
-    height: 38rem;
+    height: 41rem;
 }
 
 #card-preco-head {
@@ -260,6 +260,14 @@
     text-align: center;
     color: white;
     background-image: linear-gradient(to right, #0b2d70, #3693CA);
+
+    /* imagem de fundo */
+    background-image: url('img/imgFundoPlano2.png'), linear-gradient(rgba(11, 45, 112, 0.6), rgba(54, 147, 202, 0.6));
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* mistura a imagem com o gradiente */
+    background-blend-mode: overlay;
 }
 
 #card-preco-head h2 {
@@ -283,7 +291,7 @@
     transition: all 0.1s ease;
     z-index: 2;
     background-color: #022066;
-    height: 32.5rem !important;
+    height: 35rem !important;
 }
 
 .swiper-slide {
@@ -300,7 +308,7 @@
 }
 
 .cardPlano {
-    margin-top: -55px;
+    /* margin-top: -55px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -313,14 +321,26 @@
     -webkit-backdrop-filter: blur(10px);
     color: white;
     border-radius: 2rem !important;
-    border: 0.1rem solid rgba(255, 255, 255, 0.3);
+    border: 0.1rem solid rgba(255, 255, 255, 0.3); */
+
+    background-image: linear-gradient(to right, #0b2d701d, #3694caa2);
+    color: white;
+    padding: 30px 20px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    width: 23rem !important;
+    text-align: center;
+    margin: 20px auto;
+    transition: transform 0.3s ease;
+    height: 32rem !important;
+    border: solid #3693CA;
 
     & h1 {
         font-size: 20px;
     }
 
     & h2 {
-        margin-top: -3.5rem;
+        margin-top: -2.5rem;
         font-size: 10px;
     }
 
@@ -343,7 +363,8 @@
 }
 
 .descricaoPlano {
-    width: 20rem;
+    /* width: 20rem; */
+    background: rgba(255, 255, 255, 0.205);
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -360,12 +381,39 @@
     }
 }
 
+.cardPlano ul {
+    background: rgba(2, 32, 102, 0.033);
+    /* mais transparente no centro */
+    border-left: 6px solid rgba(255, 255, 255, 0.3);
+    /* borda esquerda grossa */
+    border-right: 6px solid rgba(255, 255, 255, 0.3);
+    /* borda direita grossa */
+    border-top: none;
+    border-bottom: none;
+    /* border-radius: 20px; */
+    /* cantos arredondados */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    padding: 15px;
+    color: white;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
 .valorPlano {
-    color: #00C7F6;
+    /* color: #00C7F6;
     font-weight: bold;
     display: flex;
     justify-content: center;
+    align-items: flex-start; */
+    /* background: rgba(255, 255, 255, 0.1); */
+    border-radius: 12px;
+    padding: 6px;
+    margin: 2px 0;
+    font-weight: bold;
     align-items: flex-start;
+    justify-content: center;
+    display: flex;
+    height: 5.5rem;
 
     & .sifrao {
         font-size: 2rem;
@@ -378,7 +426,6 @@
 
     & .subValor {
         font-size: 2rem;
-
     }
 }
 
