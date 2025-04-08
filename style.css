@@ -108,6 +108,11 @@
     justify-content: center;
 }
 
+#btn_GetQuote svg {
+    margin: .2rem;
+    margin-left: -2px;
+}
+
 #btn_GetQuote:hover {
     background-color: #001E5B;
 }
@@ -212,8 +217,12 @@
 
 .nav-item {
     margin-right: 0.5rem;
-    font-weight: bold;
+    /* font-weight: bold; */
     font-size: 15px;
+}
+
+.nav-link {
+    color: #002060 !important;
 }
 
 #about {
