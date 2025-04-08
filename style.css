@@ -252,11 +252,11 @@
     margin-top: -50px;
     position: relative;
     /* O cod abaixo ajuja tambem descer a barra de indicação dos cards */
-    height: 41rem;
+    height: 42rem;
 }
 
 #card-preco-head {
-    height: 46rem;
+    height: 43rem;
     text-align: center;
     color: white;
     background-image: linear-gradient(to right, #0b2d70, #3693CA);
@@ -270,8 +270,8 @@
     background-blend-mode: overlay;
 }
 
-#card-preco-head h2 {
-    padding-top: 2rem;
+#card-preco-head h1 {
+    padding-top: 1.5rem;
 }
 
 .card {
@@ -291,7 +291,16 @@
     transition: all 0.1s ease;
     z-index: 2;
     background-color: #022066;
-    height: 35rem !important;
+    height: 34rem !important;
+
+    & h2 {
+        margin-top: 0rem;
+    }
+
+    & h1 {
+        padding: 1rem !important;
+        margin: 0.5rem;
+    }
 }
 
 .swiper-slide {
@@ -332,7 +341,7 @@
     text-align: center;
     margin: 20px auto;
     transition: transform 0.3s ease;
-    height: 32rem !important;
+    height: 30rem !important;
     border: solid #3693CA;
 
     & h1 {
@@ -340,7 +349,7 @@
     }
 
     & h2 {
-        margin-top: -2.5rem;
+        margin-top: -1rem;
         font-size: 10px;
     }
 
@@ -367,8 +376,9 @@
     background: rgba(255, 255, 255, 0.205);
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    /* flex-direction: column; */
     font-weight: bold;
+    height: 5rem;
 
     & .velocidade {
         font-size: 3.5rem;
@@ -377,7 +387,11 @@
     }
 
     & .medVelocidade {
+        padding-left: .3rem;
         font-size: 2rem;
+        display: flex;
+        text-align: center;
+        align-items: center;
     }
 }
 
@@ -431,12 +445,14 @@
 
 .valorOferta {
     height: 0.4rem;
+    margin-top: -1rem;
+    padding-bottom: .5rem !important;
 }
 
 .cardPlano ul {
     list-style: none;
     text-align: justify;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0rem;
 }
 
 .cardPlano:hover {
