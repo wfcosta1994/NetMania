@@ -8,10 +8,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Indique e Ganhe</title>
+    <title>NetMania Internet</title>
 </head>
 
 <body>
@@ -58,8 +58,7 @@
                         <a class="nav-link" href="quemSomos.html">Quem Somos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Para Sua
-                            Casa</a>
+                        <a class="nav-link active" aria-current="page" href="index.html">Para Sua Casa</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="paraEmpresas.html">Para Sua Empresa</a>
@@ -80,6 +79,17 @@
                     <li class="nav-item">
                         <a class="nav-link" href="indiqueGanhe.html">Indique e Ganhe</a>
                     </li>
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown link
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li> -->
                     <button id="btn_GetQuote">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor"
                             stroke-width="1.5" class="bi bi-person" viewBox="0 0 16 16">
@@ -93,26 +103,41 @@
         </div>
     </nav>
 
-    <div class="formIndiqueGanhe">
-        <img src="img/indiqueGanhe.jpg" alt="">
-        <form class="indiqueGanhe" action="http://localhost:3000/salvar" method="POST">
-            <label for="cliente">Cliente</label>
-            <input type="text" name="cliente" placeholder="Nome Completo"> <br>
+    <div id="about">
+        <!-- Substituir a imagem pela logo da empresa -->
+        <div id="div-img-about">
+            <img id="img-about" src="./img/trabalhe.jpg" alt="">
+        </div>
+        <div id="text-about">
+            <h1>Sobre</h1> <br>
+            <p>Conecte-se com a gente </p>
+            <h3>Já conhece a NetMania?</h3>
+            <p>Oferecemos alta qualidade no acesso à internet e trabalhamos com tecnologia de ponta no atendimento
+                residencial, empresarial ou rural.
+                <br>
+                <br>
+                Credibilidade, qualidade e satisfação na entrega de soluções arquitetadas sob medida para atender a
+                necessidade de nossos clientes. <br>
+                Conectado a varias rotas do estado. <br>
+                Conexão com as melhores CDNs de conteúdo <br>
+                Internet Fibra Óptica e a Rádio <br>
+                Planos residenciais, empresarias e rurais. <br>
+            </p>
+            <p>Benefícios de ser nosso cliente </p>
+            <h3>Deseja ir mais rápido? Aqui você vai.</h3>
+            <p>A velocidade dos dados, conforme viaja da Internet para o seu computador, é medida em megabits por
+                segundo (Mbps). Atividades diferentes requerem velocidades diferentes.</p>
+            <li>Velocidade boa para vários dispositivos</li>
+            <li>Internet rápida e de acordo com seu uso</li>
+            <li>Equipamentos em comodato </li>
+            <li>Instalação em até 48 uteis após seu cadastro pronto* </li>
 
-            <label for="cpf">CPF</label>
-            <input type="text" name="cpf" placeholder="CPF"> <br>
-
-            <label for="telefone">Telefone</label>
-            <input type="text" name="telefone" placeholder="Telefone"> <br>
-
-            <label for="indicado">Nome do Indicado</label>
-            <input type="text" name="indicado" placeholder="Indicado"><br>
-
-            <label for="telefone_indicado">Telefone do Indicado</label>
-            <input type="text" name="telefone_indicado" placeholder="Telefone Indicado">
-
-            <button type="submit">Enviar</button>
-        </form>
+            <button class="btn-discover">Nossos planos <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                    fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                </svg></i> </button>
+        </div>
     </div>
 
     <footer>
@@ -130,7 +155,7 @@
                 <h5>SAIBA MAIS</h5>
                 <ul>
                     <li>
-                        <a href="quemSomos.html">Quem Somos</a>
+                        <a href="">Quem Somos</a>
                     </li>
                     <li>
                         <a href="cobertura.html">Cobertura</a>
@@ -194,6 +219,8 @@
         </button>
     </div>
 
+
+
     <script id="analytics-script">
         if (localStorage.getItem('cookiesAceitos') === 'true') {
             (function (i, s, o, g, r, a, m) {
@@ -207,6 +234,8 @@
             ga('send', 'pageview');
         }
     </script>
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="index.js"></script>
