@@ -854,7 +854,9 @@ footer .enderecoFooter {
 
 .mvv {
     padding: 2rem;
-    background-color: #f7fafb;
+    /* background-color: #f7fafb; */
+    background: linear-gradient(rgba(54, 148, 202, 0.9), rgba(11, 45, 112, 0.758));
+    color: white;
 }
 
 @media screen and (max-width: 480px) {
