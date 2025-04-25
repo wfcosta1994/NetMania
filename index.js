@@ -70,7 +70,7 @@ function rolarparaesquerda() {
 }
 
 //Botão que dar acesso a página de gerar boletos
-const url = "http://netmaniainternet.com.br/client"
+const url = "https://portal-staging.netmaniainternet.com.br/auth/login"
 const btn = document.querySelector("#btn_GetQuote")
 function acessar(url) {
     const cliente = window.open(url, '_blank')
