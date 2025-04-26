@@ -108,27 +108,36 @@
 #btn_GetQuote {
     display: flex;
     margin-top: 0.5%;
-    color: white;
+    color: #001E5B;
     border: none;
-    border-radius: 20px;
-    background: #3693CA;
+    /* border-radius: 20px; */
+    background: none;
     width: 150px;
     height: 30px;
     align-items: center;
     justify-content: center;
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
 }
 
 #btn_GetQuote svg {
+    border-left: #dfe0e3 solid 2px;
+    padding-left: 0.65rem;
+    margin-right: 0.4rem;
+}
+
+/* #btn_GetQuote svg {
     margin: .2rem;
     margin-left: -2px;
-}
+} */
 
-#btn_GetQuote:hover {
+/* #btn_GetQuote:hover {
     background-color: #001E5B;
-}
+} */
 
 .logo {
-    margin: -8px 0 0 -8px;
+    margin: -0.5rem -1rem 0 0;
     width: 10rem;
     height: 3rem;
     /* object-fit: cover; */
@@ -227,12 +236,14 @@
 
 .nav-item {
     margin-right: 0.5rem;
-    /* font-weight: bold; */
     font-size: 15px;
 }
 
 .nav-link {
     color: #002060 !important;
+    font-weight: 430 !important;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.92rem !important;
 }
 
 #about {
@@ -853,10 +864,32 @@ footer .enderecoFooter {
 }
 
 .mvv {
+    position: relative;
     padding: 2rem;
-    /* background-color: #f7fafb; */
-    background: linear-gradient(rgba(54, 148, 202, 0.9), rgba(11, 45, 112, 0.758));
-    color: white;
+    color: #001E5B;
+    overflow: hidden;
+    font-weight: 600;
+}
+
+.mvv::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('img/mvv.jpg');
+    background-size: contain;
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    opacity: 0.3;
+    /* aqui controla a transparência da imagem */
+    z-index: 0;
+}
+
+.mvv>* {
+    position: relative;
+    z-index: 1;
 }
 
 @media screen and (max-width: 480px) {
