@@ -415,8 +415,30 @@
     justify-content: end;
 }
 
-.capaComCard {
+/* .capaComCard {
     transform: scaleX(-1);
+} */
+@keyframes subirDescer {
+    0% {
+        margin-top: -13rem;
+    }
+
+    50% {
+        margin-top: -1rem;
+        /* Subindo um pouco */
+    }
+
+    100% {
+        margin-top: -13rem;
+        /* Voltando para a posição original */
+    }
+}
+
+#bonecoCapa {
+    width: 10rem;
+    margin: 0 5rem 0 0;
+    animation: subirDescer 2s ease-in-out infinite;
+    /* Animação de 2 segundos, repetindo infinitamente */
 }
 
 /* Responsividade para telas menores */
