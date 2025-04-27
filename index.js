@@ -47,9 +47,6 @@ const swiper = new Swiper('.mySwiper', {
 // Atualiza o destaque se a janela for redimensionada
 window.addEventListener('resize', highlightCenterSlide);
 
-
-
-
 let bruna = window.document.getElementById("bruna")
 let leonardo = window.document.getElementById("leonardo")
 let samanta = window.document.getElementById("samanta")
@@ -60,6 +57,28 @@ function rolarparadireita() {
     leonardo.style = "display:flex"
     setaDireita.style = "display:none"
     setaEsquerda.style = "display:flex"
+}
+
+let bonecoFrente = window.document.getElementsByClassName("card-img-top")
+let bonecoDireita = "img/icoDireita.jpg"
+// Pega também todos os Cards
+let cards = document.getElementsByClassName("card");
+
+function alterarIcone(event) {
+    // Dentro do Card, acha a imagem
+    let imagem = event.currentTarget.querySelector(".card-img-top");
+    imagem.src = bonecoDireita;
+}
+
+function voltarIcone(event) {
+    let imagem = event.currentTarget.querySelector(".card-img-top");
+    imagem.src = "img/bonecosFrente.png"; // caminho da imagem original
+}
+
+// Agora adiciona os eventos no CARD, não na imagem
+for (let i = 0; i < cards.length; i++) {
+    cards[i].addEventListener('mouseover', alterarIcone);
+    cards[i].addEventListener('mouseout', voltarIcone);
 }
 
 function rolarparaesquerda() {

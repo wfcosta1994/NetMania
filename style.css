@@ -149,6 +149,10 @@
     object-fit: cover;
 }
 
+.capaModelo {
+    object-fit: fill;
+}
+
 .nav-link:hover {
     color: #3693CA !important;
 }
@@ -311,6 +315,11 @@
     border: none !important;
 }
 
+.card-img-top {
+    width: 19rem;
+    height: 4.8rem;
+}
+
 .card a {
     text-decoration: none;
     color: inherit;
@@ -390,6 +399,24 @@
     & li {
         margin: 0.6rem;
     }
+}
+
+.cardPlanoCapa {
+    height: 32rem !important;
+    background-color: #022066;
+
+    & h1 {
+        margin-top: 1.5rem;
+        font-size: 20px;
+    }
+}
+
+.card-destaqueCapa {
+    justify-content: end;
+}
+
+.capaComCard {
+    transform: scaleX(-1);
 }
 
 /* Responsividade para telas menores */
