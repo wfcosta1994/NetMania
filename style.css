@@ -179,6 +179,10 @@
     transition: all 0.3s ease;
 }
 
+.carousel-caption a {
+    text-decoration: none;
+}
+
 .carousel-caption button:hover {
     transform: scale(1.05);
     background: linear-gradient(135deg, #003ecb, #001540);
