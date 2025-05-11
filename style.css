@@ -1182,6 +1182,20 @@ footer .enderecoFooter {
 @media screen and (min-width: 481px) and (max-width: 1200px) {
     #navbarNavDropdown {
         background-color: white !important;
+        margin-top: 0.6rem;
+    }
+
+    .container-fluid {
+        height: 2.5rem;
+    }
+
+    .mx-auto {
+        align-items: center;
+    }
+
+    .nav-item {
+        /* width: 17.3rem !important; */
+        margin-left: 2%;
     }
 }
 
@@ -1199,10 +1213,16 @@ footer .enderecoFooter {
     #navbarNavDropdown {
         background-color: white;
         /* height: 21.1rem; */
+        margin-top: 0.8rem;
+        justify-content: start;
+    }
+
+    .mx-auto {
+        align-items: flex-start;
     }
 
     .nav-item {
-        width: 17.3rem !important;
+        /* width: 17.3rem !important; */
         margin-left: 2%;
     }
 
