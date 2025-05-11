@@ -3,6 +3,17 @@
     margin: 0px;
 }
 
+.container-fluid {
+    display: flex;
+    /* background-color: #003ecb; */
+}
+
+#navbarNavDropdown {
+    font-size: 14px;
+    text-align: center;
+    background-color: transparent;
+}
+
 .primeiraDiv a {
     text-decoration: none;
     color: white !important;
@@ -13,22 +24,13 @@
     background-image: linear-gradient(#021335ee, #3693CA);
     text-align: end;
     padding-right: 1%;
-    height: 40px;
+    height: 2.5rem;
 }
 
-/* .headTop {
-    background-color: rgb(221, 235, 235);
-    width: 55%;
-    height: 40px;
-    position: absolute;
-    margin-left: 8%;
-    clip-path: polygon(0 0, 100% 0, 95% 100%, 5% 100%);
-    opacity: 0.4;
-} */
 .headTop {
     background-color: rgb(221, 235, 235);
     width: 55%;
-    height: 40px;
+    height: 2.5rem;
     position: absolute;
     margin-left: 8%;
     clip-path: polygon(0 0, 100% 0, 95% 100%, 5% 100%);
@@ -42,7 +44,7 @@
     margin-left: 20%;
     background-color: #3693CA;
     transform: skew(-45deg);
-    left: -350px;
+    left: -21.9rem;
     animation-duration: 2s;
     animation-name: eu_criei_haedtop1;
     /* animation-iteration-count: infinite; */
@@ -50,12 +52,12 @@
 
 .headtop2 {
     position: absolute;
-    width: 550px;
+    width: 34.38rem;
     height: 100%;
     margin-left: 20%;
     background-color: #3693CA;
     transform: skew(-45deg);
-    left: -350px;
+    left: -21.9rem;
     animation-duration: 2s;
     animation-name: headtop2;
     /* animation-iteration-count: infinite; */
@@ -70,7 +72,7 @@
 }
 
 .ul_headTop li a {
-    padding: 8px;
+    padding: 0.5rem;
     display: inline-block;
     color: black;
     color-scheme: initial;
@@ -89,7 +91,7 @@
 @keyframes headtop2 {
     from {
         margin-left: 0%;
-        width: 200px;
+        width: 12.5rem;
     }
 
     to {
@@ -98,7 +100,7 @@
 }
 
 .fa {
-    padding: 9px;
+    padding: 0.56rem;
 }
 
 .fa:hover {
@@ -290,7 +292,8 @@
 .nav-item {
     display: flex;
     margin-right: 0.5rem;
-    font-size: 15px;
+    font-size: 0.94rem;
+    justify-content: left;
 }
 
 .nav-link {
@@ -298,6 +301,10 @@
     font-weight: 430 !important;
     font-family: 'Inter', sans-serif;
     font-size: 0.92rem !important;
+}
+
+.navbar-nav {
+    align-items: center;
 }
 
 #about {
@@ -959,16 +966,15 @@ footer .enderecoFooter {
     color: #001E5B;
 }
 
-#navbarNavDropdown {
-    font-size: 14px;
-}
+
 
 .mvv {
     position: relative;
     padding: 2rem;
-    color: #001E5B;
+    color: #333;
     overflow: hidden;
-    font-weight: 600;
+    font-size: 1.3rem;
+    font-weight: bold;
 }
 
 .mvv::before {
@@ -982,7 +988,7 @@ footer .enderecoFooter {
     background-size: contain;
     background-position: center;
     /* background-repeat: no-repeat; */
-    opacity: 0.3;
+    opacity: 0.19;
     /* aqui controla a transparência da imagem */
     z-index: 0;
 }
@@ -991,6 +997,7 @@ footer .enderecoFooter {
     position: relative;
     z-index: 1;
 }
+
 
 #pl500 {
     padding: 1rem;
@@ -1171,6 +1178,13 @@ footer .enderecoFooter {
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
 }
 
+/* Tablets maiores e notebooks */
+@media screen and (min-width: 481px) and (max-width: 1200px) {
+    #navbarNavDropdown {
+        background-color: white !important;
+    }
+}
+
 @media screen and (max-width: 480px) {
     .logo {
         margin-top: -5px;
@@ -1184,12 +1198,11 @@ footer .enderecoFooter {
 
     #navbarNavDropdown {
         background-color: white;
-        height: 20.5rem;
-        /* padding-right: 5rem !important; */
+        /* height: 21.1rem; */
     }
 
     .nav-item {
-        width: 17.3rem;
+        width: 17.3rem !important;
         margin-left: 2%;
     }
 
@@ -1368,3 +1381,11 @@ footer .enderecoFooter {
         /* Ajuste conforme necessário */
     }
 }
+
+/* Celulares médios e tablets pequenos */
+@media screen and (max-width: 768px) {}
+
+
+
+/* Telas grandes */
+@media screen and (max-width: 1200px) {}
