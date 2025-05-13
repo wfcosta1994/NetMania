@@ -1240,10 +1240,6 @@ footer .enderecoFooter {
         padding: 20px 0px 0px 0px;
     }
 
-    .card-group {
-        margin: 10%;
-    }
-
     #service {
         height: 1080px;
     }
@@ -1363,22 +1359,20 @@ footer .enderecoFooter {
         flex-direction: column;
     }
 
-    footer .linha1 {
-        align-items: flex-start;
-    }
-
-    footer ul li {
-        text-align: left;
-    }
-
     .fa {
         padding: 5px 10px 5px 5px;
     }
 
     footer nav {
-        height: 220px;
+        text-align: center;
+        margin: 2%;
+        height: 11rem;
+        align-items: center;
     }
 
+    footer ul {
+        align-items: center;
+    }
 
     .swiper {
         width: 100%;
@@ -1397,8 +1391,12 @@ footer .enderecoFooter {
 
     .card {
         width: 100%;
-        max-width: 300px;
+        max-width: 83%;
         /* Ajuste conforme necessário */
+    }
+
+    .subfeature h1 {
+        margin: 5%;
     }
 }
 
