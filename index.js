@@ -35,8 +35,8 @@ const swiper = new Swiper('.mySwiper', {
     },
     breakpoints: {
         640: { slidesPerView: 1 }, //Para definir a quantidade de card que vai aparecer na tela
-        768: { slidesPerView: 2 }, //Para definir a quantidade de card que vai aparecer na tela
-        1024: { slidesPerView: 3 } //Para definir a quantidade de card que vai aparecer na tela
+        1110: { slidesPerView: 1 }, //Para definir a quantidade de card que vai aparecer na tela
+        1111: { slidesPerView: 3 } //Para definir a quantidade de card que vai aparecer na tela
     },
     on: {
         init: () => highlightCenterSlide(),
