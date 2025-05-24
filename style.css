@@ -338,6 +338,7 @@
 
 .card-group {
     width: 100%;
+    display: contents;
 }
 
 .card-preco {
@@ -1225,6 +1226,10 @@ footer .enderecoFooter {
 }
 
 @media screen and (max-width: 480px) {
+    #telefone {
+        text-decoration: none;
+    }
+
     .logo {
         margin-top: -5px;
         height: 25px;
@@ -1276,6 +1281,11 @@ footer .enderecoFooter {
 
     #card-preco-head {
         height: auto;
+        text-align: -webkit-center;
+    }
+
+    #card-preco-head h1 {
+        width: 80%;
     }
 
     .card-preco {
