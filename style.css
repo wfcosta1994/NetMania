@@ -511,6 +511,10 @@
         height: auto;
         padding: 1rem;
     }
+
+    #telefone {
+        text-decoration: none;
+    }
 }
 
 .descricaoPlano {
@@ -1226,6 +1230,12 @@ footer .enderecoFooter {
 }
 
 @media screen and (max-width: 480px) {
+    .cardPlano {
+        width: 95% !important;
+        height: auto !important;
+        padding: 1rem !important;
+    }
+
     #telefone {
         text-decoration: none;
     }
