@@ -169,4 +169,3 @@ document.querySelector("form.indiqueGanhe").addEventListener("submit", function 
             console.error("Erro ao enviar:", error);
         });
 });
-
