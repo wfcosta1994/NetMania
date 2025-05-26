@@ -344,8 +344,8 @@
 
 .btn-direita-inferior {
     position: absolute;
-    bottom: 20px;
-    right: 20px;
+    bottom: 2rem;
+    right: 4rem;
     background-color: #007bff;
     color: white;
     padding: 10px 20px;
@@ -1291,6 +1291,21 @@ footer .enderecoFooter {
 }
 
 @media screen and (max-width: 480px) {
+    .cardPlanoCapa {}
+
+    .btn-direita-inferior {
+        left: 10rem !important;
+    }
+
+    .carousel-caption button {
+        position: relative;
+        top: 4.5rem;
+        left: -5rem;
+        font-size: .7rem;
+        width: 7rem;
+        height: 2rem;
+    }
+
     .cardPlano {
         width: 95% !important;
         height: auto !important;
@@ -1504,8 +1519,6 @@ footer .enderecoFooter {
     .subfeature h1 {
         margin: 5%;
     }
-
-
 }
 
 @media screen and (max-width: 800px) {
