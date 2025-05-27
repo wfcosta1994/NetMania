@@ -170,7 +170,7 @@
                             </div>
                         </a>
                         <div id="textCapa">
-                            <h1>Tudo isso com o suporte e a qualidade que só a Netmania oferece.</h1>
+                            <h1 id="typing-text"></h1>
                         </div>
                         <!-- <img id="bonecoCapa" src="./img/bonecosFrente.png" alt=""> -->
 
@@ -777,6 +777,43 @@
             ga('create', 'UA-XXXXX-Y', 'auto');
             ga('send', 'pageview');
         }
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const text = "Tudo isso com o suporte e a qualidade que só a Netmania oferece.";
+            const typingTextElement = document.getElementById("typing-text");
+            let index = 0;
+            let isDeleting = false;
+
+            function type() {
+                if (!isDeleting) {
+                    typingTextElement.textContent += text.charAt(index);
+                    index++;
+                    if (index === text.length) {
+                        // Espera 2 segundos antes de começar a apagar
+                        setTimeout(() => {
+                            isDeleting = true;
+                            type();
+                        }, 2000);
+                        return;
+                    }
+                } else {
+                    typingTextElement.textContent = text.substring(0, index - 1);
+                    index--;
+                    if (index === 0) {
+                        isDeleting = false;
+                    }
+                }
+
+                // Velocidade da digitação/apagamento
+                setTimeout(type, isDeleting ? 30 : 50);
+            }
+
+            typingTextElement.textContent = "";
+            type();
+        });
+
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
