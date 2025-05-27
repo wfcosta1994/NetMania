@@ -1055,19 +1055,77 @@ footer .enderecoFooter {
     color: #001E5B;
 }
 
-
+#pilares {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 
 .mvv {
-    position: relative;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     padding: 2rem;
     color: #333;
     overflow: hidden;
-    font-size: 1.3rem;
-    font-weight: bold;
+    font-size: 1.2rem;
+
+    /* font-weight: bold; */
+    & h3 {
+        width: 10rem;
+        background-color: white;
+        text-align: center;
+        margin: -1.09rem auto 0 auto;
+        font-weight: 700;
+    }
+
+    & p {
+        margin: 1rem;
+    }
+}
+
+.sub-mvv {
+    width: 25rem;
+    height: 20rem;
+    border: #001E5B solid 2px;
+    border-radius: 1rem;
+    margin: 1rem;
+}
+
+.proposito {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    min-width: 82vw;
+    align-content: center;
+    border: #001E5B solid 2px;
+    border-radius: 1rem;
+    margin: 1rem;
+
+    & h3 {
+        width: 12rem;
+        background-color: white;
+        text-align: center;
+        margin: -1.09rem auto 0 auto;
+        color: #b9ad0d;
+    }
+}
+
+.missao h3 {
+    color: #0096D1;
+}
+
+.visao h3 {
+    color: #022366;
+}
+
+.valores h3 {
+    color: #1a8906;
 }
 
 .mvv::before {
-    content: "";
+    /* content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -1076,15 +1134,13 @@ footer .enderecoFooter {
     background-image: url('img/mvv.jpg');
     background-size: contain;
     background-position: center;
-    /* background-repeat: no-repeat; */
     opacity: 0.19;
-    /* aqui controla a transparência da imagem */
-    z-index: 0;
+    z-index: 0; */
 }
 
 .mvv>* {
-    position: relative;
-    z-index: 1;
+    /* position: relative;
+    z-index: 1; */
 }
 
 
@@ -1270,6 +1326,13 @@ footer .enderecoFooter {
 
 /* Tablets maiores e notebooks */
 @media screen and (min-width: 481px) and (max-width: 1200px) {
+    .proposito {
+        min-width: 74vw;
+    }
+
+    .mvv {
+        font-size: 1.1rem;
+    }
 
     #navbarNavDropdown {
         background-color: white !important;
@@ -1291,7 +1354,14 @@ footer .enderecoFooter {
 }
 
 @media screen and (max-width: 480px) {
-    .cardPlanoCapa {}
+
+    .proposito {
+        min-width: 70vw;
+    }
+
+    .mvv {
+        font-size: 1.1rem;
+    }
 
     .btn-direita-inferior {
         left: 10rem !important;
