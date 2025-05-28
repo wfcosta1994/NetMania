@@ -8,11 +8,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    <title>NetMania Internet</title>
+    <title>Vendedor Parceiro</title>
 </head>
 
 <body>
@@ -84,17 +84,6 @@
                     <li class="nav-item">
                         <a class="nav-link" href="indiqueGanhe.html">Indique e Ganhe</a>
                     </li>
-                    <!-- <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Dropdown link
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-end">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li> -->
                     <button id="btn_GetQuote">
                         <!-- <img src="https://static.vecteezy.com/ti/vetor-gratis/p1/512576-icone-preto-do-glyph-do-perfil-gratis-vetor.jpg"
                             alt="Ícone de perfil" width="30"> -->
@@ -104,6 +93,7 @@
                             <path
                                 d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zm0 2c-3.3 0-10 1.7-10 5v3h20v-3c0-3.3-6.7-5-10-5z" />
                         </svg>
+
                         Minha Netmania
                     </button>
                 </ul>
@@ -111,67 +101,26 @@
         </div>
     </nav>
 
-    <div id="about">
-        <!-- Substituir a imagem pela logo da empresa -->
-        <div id="div-img-about">
-            <img id="img-about" src="./img/mvv.jpg" alt="">
-        </div>
-        <div id="text-about">
-            <h1>Conectamos Histórias</h1> <br>
-            <p>
-                Tudo começou em 2008! <br>
-                Hoje, em 2025, celebramos 17 anos de trajetória conectando pessoas e transformando vidas. <br> <br>
+    <div class="formVendedorParceiro">
+        <img src="img/vendedorParceiro.png" alt="">
+        <!-- <form class="vendedorParceiro" action="http://localhost:3000/salvar" method="POST"> estava sendo usado até 27/04/2025 -->
+        <form class="vendedorParceiro" action="http://localhost:3000/salvar" method="POST">
 
-                A Netmania nasceu do desejo de atender às necessidades de acesso à internet. Wilson Santos, CEO da
-                empresa, foi pioneiro ao registrar as primeiras interações sociais, que não apenas atenderam às suas
-                expectativas pessoais, mas despertaram o interesse em compartilhá-las e expandi-las. Assim, surgiu a
-                missão de conectar histórias e transformar realidades. Em agosto de 2008, nasceu a necessidade de
-                proporcionar uma nova experiência de acesso à internet nas
-                comunidades. Desde então, a Netmania atua com excelência no mercado, levando conexão de qualidade e
-                promovendo inclusão digital. <br><br>
 
-                Fundada em São José de Ribamar, a empresa cresceu com dedicação e trabalho constante. Esse crescimento
-                impulsionou a expansão para outras regiões de São Luís e Paço do Lumiar, com planos próximos de alcançar
-                também a cidade de Raposa. Nosso objetivo é cobrir toda a Ilha, oferecendo sempre um serviço
-                transparente, confiável e de qualidade. Desde o início, buscamos inovação tecnológica e, acima de tudo,
-                manter nossa essência: conectar pessoas
-                de forma única. Com uma visão clara de ser referência em credibilidade, qualidade e satisfação, seguimos
-                oferecendo soluções que fazem a diferença na vida de nossos clientes. <br> <br>
+            <label for="cpf">CPF/CNPJ</label>
+            <input type="text" name="cpf" placeholder="CPF/CNPJ"> <br>
 
-                Tudo isso só é possível graças à coragem, à visão e à determinação de Wilson, ao lado dos sócios Marcio
-                e Fábio, e com o apoio de uma equipe comprometida, forte e apaixonada pelo que faz. Seguimos firmes na
-                missão de construir histórias, transformar vidas e conectar pessoas às suas
-                experiências, onde quer que estejam. <br> <br>
+            <label for="cliente">Nome/Razão Social </label>
+            <input type="text" name="cliente" placeholder="Nome"> <br>
 
-            <h1>Netmania – Você Sempre Conectado!</h1>
-            </p>
-            <!-- <h3>Já conhece a NetMania?</h3>
-            <p>Oferecemos alta qualidade no acesso à internet e trabalhamos com tecnologia de ponta no atendimento
-                residencial, empresarial ou rural.
-                <br>
-                <br>
-                Credibilidade, qualidade e satisfação na entrega de soluções arquitetadas sob medida para atender a
-                necessidade de nossos clientes. <br>
-                Conectado a varias rotas do estado. <br>
-                Conexão com as melhores CDNs de conteúdo <br>
-                Internet Fibra Óptica e a Rádio <br>
-                Planos residenciais, empresarias e rurais. <br>
-            </p>
-            <p>Benefícios de ser nosso cliente </p>
-            <h3>Deseja ir mais rápido? Aqui você vai.</h3>
-            <p>A velocidade dos dados, conforme viaja da Internet para o seu computador, é medida em megabits por
-                segundo (Mbps). Atividades diferentes requerem velocidades diferentes.</p>
-            <li>Velocidade boa para vários dispositivos</li>
-            <li>Internet rápida e de acordo com seu uso</li>
-            <li>Equipamentos em comodato </li>
-            <li>Instalação em até 48 uteis após seu cadastro pronto* </li> -->
+            <label for="indicado">Fantasia</label>
+            <input type="text" name="indicado" placeholder="Fantasia"><br>
 
-            <!-- <button class="btn-discover">Nossos planos <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                    fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
-                </svg></i> </button> -->
-        </div>
+            <label for="telefone">Telefone</label>
+            <input type="text" name="telefone" placeholder="Telefone"> <br>
+
+            <button type="submit">Enviar</button>
+        </form>
     </div>
 
     <footer>
@@ -255,8 +204,6 @@
         </button>
     </div>
 
-
-
     <script id="analytics-script">
         if (localStorage.getItem('cookiesAceitos') === 'true') {
             (function (i, s, o, g, r, a, m) {
@@ -271,9 +218,9 @@
         }
     </script>
 
-
     <!-- Bootstrap JS (v5.x) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="index.js"></script>
 </body>
