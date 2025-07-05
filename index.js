@@ -1,171 +1,196 @@
-// Aguarda o DOM carregar completamente antes de inicializar o Swiper
-function highlightCenterSlide() {
-    const slides = document.querySelectorAll('.swiper-slide');
-    slides.forEach(slide => slide.classList.remove('card-destaque'));
+// Aguarda o DOM carregar completamente antes de executar qualquer código
+document.addEventListener("DOMContentLoaded", function () {
 
-    const visibleSlides = [];
-    slides.forEach(slide => {
-        const rect = slide.getBoundingClientRect();
-        if (rect.right > 0 && rect.left < window.innerWidth) {
-            visibleSlides.push({
-                slide: slide,
-                centerDist: Math.abs(rect.left + rect.width / 2 - window.innerWidth / 2)
-            });
+    // ----------------- SWIPER -----------------
+    function highlightCenterSlide() {
+        const slides = document.querySelectorAll('.swiper-slide');
+        slides.forEach(slide => slide.classList.remove('card-destaque'));
+
+        const visibleSlides = [];
+        slides.forEach(slide => {
+            const rect = slide.getBoundingClientRect();
+            if (rect.right > 0 && rect.left < window.innerWidth) {
+                visibleSlides.push({
+                    slide: slide,
+                    centerDist: Math.abs(rect.left + rect.width / 2 - window.innerWidth / 2)
+                });
+            }
+        });
+
+        if (visibleSlides.length > 0) {
+            visibleSlides.sort((a, b) => a.centerDist - b.centerDist);
+            visibleSlides[0].slide.classList.add('card-destaque');
+        }
+    }
+
+    const swiper = new Swiper('.mySwiper', {
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 0.1,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev'
+        },
+        breakpoints: {
+            640: { slidesPerView: 1 },
+            1110: { slidesPerView: 1 },
+            1111: { slidesPerView: 3 }
+        },
+        on: {
+            init: () => highlightCenterSlide(),
+            transitionEnd: () => highlightCenterSlide()
         }
     });
 
-    if (visibleSlides.length > 0) {
-        visibleSlides.sort((a, b) => a.centerDist - b.centerDist);
-        visibleSlides[0].slide.classList.add('card-destaque');
+    window.addEventListener('resize', highlightCenterSlide);
+
+    // ----------------- ALTERAÇÕES DE CARDS -----------------
+    let bruna = document.getElementById("bruna");
+    let leonardo = document.getElementById("leonardo");
+    let samanta = document.getElementById("samanta");
+    let setaDireita = document.getElementById("setadireita");
+    let setaEsquerda = document.getElementById("setaesquerda");
+
+    function rolarparadireita() {
+        if (bruna && leonardo && setaDireita && setaEsquerda) {
+            bruna.style.display = "none";
+            leonardo.style.display = "flex";
+            setaDireita.style.display = "none";
+            setaEsquerda.style.display = "flex";
+        }
     }
-}
 
-// Inicialização do Swiper
-const swiper = new Swiper('.mySwiper', {
-    loop: true,
-    slidesPerView: 1,
-    spaceBetween: 0.1,
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true
-    },
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev'
-    },
-    breakpoints: {
-        640: { slidesPerView: 1 }, //Para definir a quantidade de card que vai aparecer na tela
-        1110: { slidesPerView: 1 }, //Para definir a quantidade de card que vai aparecer na tela
-        1111: { slidesPerView: 3 } //Para definir a quantidade de card que vai aparecer na tela
-    },
-    on: {
-        init: () => highlightCenterSlide(),
-        transitionEnd: () => highlightCenterSlide()
+    function rolarparaesquerda() {
+        if (bruna && leonardo && setaDireita && setaEsquerda) {
+            bruna.style.display = "flex";
+            leonardo.style.display = "none";
+            setaEsquerda.style.display = "none";
+            setaDireita.style.display = "flex";
+        }
     }
-});
 
-// Atualiza o destaque se a janela for redimensionada
-window.addEventListener('resize', highlightCenterSlide);
+    let bonecoDireita = "img/icoDireita.jpg";
+    let cards = document.getElementsByClassName("card");
 
-let bruna = window.document.getElementById("bruna")
-let leonardo = window.document.getElementById("leonardo")
-let samanta = window.document.getElementById("samanta")
-let setaDireita = window.document.getElementById("setadireita")
-let setaEsquerda = window.document.getElementById("setaesquerda")
-function rolarparadireita() {
-    bruna.style = "display:none"
-    leonardo.style = "display:flex"
-    setaDireita.style = "display:none"
-    setaEsquerda.style = "display:flex"
-}
-
-let bonecoFrente = window.document.getElementsByClassName("card-img-top")
-let bonecoDireita = "img/icoDireita.jpg"
-// Pega também todos os Cards
-let cards = document.getElementsByClassName("card");
-
-function alterarIcone(event) {
-    // Dentro do Card, acha a imagem
-    let imagem = event.currentTarget.querySelector(".card-img-top");
-    imagem.src = bonecoDireita;
-}
-
-function voltarIcone(event) {
-    let imagem = event.currentTarget.querySelector(".card-img-top");
-    imagem.src = "img/bonecosFrente.png"; // caminho da imagem original
-}
-
-// Agora adiciona os eventos no CARD, não na imagem
-for (let i = 0; i < cards.length; i++) {
-    cards[i].addEventListener('mouseover', alterarIcone);
-    cards[i].addEventListener('mouseout', voltarIcone);
-}
-
-function rolarparaesquerda() {
-    bruna.style = "display:flex"
-    leonardo.style = "display:none"
-    setaEsquerda.style = "display:none"
-    setaDireita.style = "display:flex"
-}
-
-//Botão que dar acesso a página de gerar boletos
-const url = "https://portal.netmaniainternet.com.br/auth/login"
-const btn = document.querySelector("#btn_GetQuote")
-function acessar(url) {
-    const cliente = window.open(url, '_blank')
-    cliente.focus()
-}
-btn.addEventListener('click', () => {
-    window.open(url)
-})
-
-//Botão que dar acesso a página do plano de 500mg
-function link_plano() {
-    window.open("https://abrir.link/aWdtR", "_blank");
-
-    //precisa alterar o link
-}
-
-function aceitarCookies() {
-    localStorage.setItem('cookiesAceitos', 'true');
-    document.getElementById('cookie-banner').style.display = 'none';
-    location.reload(); // Recarrega a página para ativar os cookies permitidos
-}
-
-function recusarCookies() {
-    localStorage.setItem('cookiesAceitos', 'false');
-    document.getElementById('cookie-banner').style.display = 'none';
-    bloquearCookies(); // Chama a função para remover cookies opcionais
-}
-
-if (localStorage.getItem('cookiesAceitos') !== null) {
-    document.getElementById('cookie-banner').style.display = 'none';
-}
-
-function bloquearCookies() {
-    // Remove cookies não essenciais
-    document.cookie.split(";").forEach(function (c) {
-        document.cookie = c.trim().split("=")[0] + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-    });
-
-    // Remove scripts de rastreamento
-    const analytics = document.getElementById("analytics-script");
-    if (analytics) {
-        analytics.remove();
+    function alterarIcone(event) {
+        let imagem = event.currentTarget.querySelector(".card-img-top");
+        if (imagem) imagem.src = bonecoDireita;
     }
-}
 
-// Bloqueia cookies e scripts se o usuário recusou
-if (localStorage.getItem('cookiesAceitos') === 'false') {
-    bloquearCookies();
-}
+    function voltarIcone(event) {
+        let imagem = event.currentTarget.querySelector(".card-img-top");
+        if (imagem) imagem.src = "img/bonecosFrente.png";
+    }
 
-// Para ajudar na conexão do banco de dados MySQL
+    for (let i = 0; i < cards.length; i++) {
+        cards[i].addEventListener('mouseover', alterarIcone);
+        cards[i].addEventListener('mouseout', voltarIcone);
+    }
 
-document.querySelector("form.indiqueGanhe").addEventListener("submit", function (event) {
-    event.preventDefault();
-
-    const formData = {
-        cliente: document.querySelector('input[name="cliente"]').value,
-        cpf: document.querySelector('input[name="cpf"]').value,
-        telefone: document.querySelector('input[name="telefone"]').value,
-        indicado: document.querySelector('input[name="indicado"]').value,
-        telefone_indicado: document.querySelector('input[name="telefone_indicado"]').value
-    };
-
-    console.log("Dados enviados:", formData);  // Verifique no console
-
-    fetch("http://localhost:3000/salvar", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData)
-    })
-        .then(response => response.json())
-        .then(data => {
-            console.log("Resposta do servidor:", data);  // Verifique a resposta do servidor
-            alert(data.message);
-        })
-        .catch(error => {
-            console.error("Erro ao enviar:", error);
+    // ----------------- BOTÕES E LINKS -----------------
+    const url = "https://portal.netmaniainternet.com.br/auth/login";
+    const btn = document.querySelector("#btn_GetQuote");
+    if (btn) {
+        btn.addEventListener('click', () => {
+            window.open(url, "_blank");
         });
+    }
+
+    function link_plano() {
+        window.open("https://abrir.link/aWdtR", "_blank");
+    }
+
+    // ----------------- COOKIES -----------------
+    function aceitarCookies() {
+        localStorage.setItem('cookiesAceitos', 'true');
+        document.getElementById('cookie-banner').style.display = 'none';
+        location.reload();
+    }
+
+    function recusarCookies() {
+        localStorage.setItem('cookiesAceitos', 'false');
+        document.getElementById('cookie-banner').style.display = 'none';
+        bloquearCookies();
+    }
+
+    function bloquearCookies() {
+        document.cookie.split(";").forEach(function (c) {
+            document.cookie = c.trim().split("=")[0] + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+        });
+
+        const analytics = document.getElementById("analytics-script");
+        if (analytics) analytics.remove();
+    }
+
+    if (localStorage.getItem('cookiesAceitos') !== null) {
+        document.getElementById('cookie-banner').style.display = 'none';
+    }
+
+    if (localStorage.getItem('cookiesAceitos') === 'false') {
+        bloquearCookies();
+    }
+
+    // ----------------- FORMULÁRIO INDIQUE E GANHE -----------------
+    const formIndique = document.querySelector("form.indiqueGanhe");
+    if (formIndique) {
+        formIndique.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            const formData = {
+                cliente: document.querySelector('input[name="cliente"]').value,
+                cpf: document.querySelector('input[name="cpf"]').value,
+                telefone: document.querySelector('input[name="telefone"]').value,
+                indicado: document.querySelector('input[name="indicado"]').value,
+                telefone_indicado: document.querySelector('input[name="telefone_indicado"]').value
+            };
+
+            fetch("http://localhost:3000/salvar", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(formData)
+            })
+                .then(response => response.json())
+                .then(data => {
+                    alert(data.message || "Dados enviados com sucesso!");
+                })
+                .catch(error => {
+                    console.error("Erro ao enviar:", error);
+                    alert("Erro ao enviar os dados.");
+                });
+        });
+    }
+
+    // ----------------- FORMULÁRIO VENDEDOR PARCEIRO -----------------
+    const formVendedor = document.querySelector("form.vendedorParceiro");
+    if (formVendedor) {
+        formVendedor.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            const formData = {
+                vendedor: formVendedor.querySelector('input[name="vendedor"]').value,
+                cpf_cnpj: formVendedor.querySelector('input[name="cpf_cnpj"]').value,
+                fantasia: formVendedor.querySelector('input[name="fantasia"]').value,
+                telefone_vendedor: formVendedor.querySelector('input[name="telefone_vendedor"]').value
+            };
+
+            fetch("http://localhost:3000/salvar-vendedor-parceiro", { // <-- CORRIGIDO AQUI
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(formData)
+            })
+                .then(response => response.json())
+                .then(data => {
+                    alert(data.message || "Dados enviados com sucesso!");
+                    formVendedor.reset(); // limpa os campos após envio
+                })
+                .catch(error => {
+                    console.error("Erro ao enviar:", error);
+                    alert("Erro ao enviar os dados.");
+                });
+        });
+    }
 });

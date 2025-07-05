@@ -116,6 +116,36 @@ app.post("/salvar", async (req, res) => {
     }
 });
 
+// Rota para salvar dados do formulário vendedorParceiro
+app.post("/salvar-vendedor-parceiro", async (req, res) => {
+    const { cpf_cnpj, vendedor, fantasia, telefone_vendedor } = req.body;
+
+    console.log("Dados do vendedor parceiro recebidos:", req.body);
+
+    if (!cpf_cnpj || !vendedor || !fantasia || !telefone_vendedor) {
+        return res.status(400).json({ error: "Todos os campos são obrigatórios!" });
+    }
+
+    // URL do webhook do Apps Script
+    const webhookUrl = "https://script.google.com/macros/s/AKfycbzZYNyiHfn2DQGI3n6BKcjo_1uCUDvRsaoWiKIngSLpM95DDcjFFKxlW-xcE41y830/exec"; // Substitua aqui
+
+    try {
+        const response = await axios.post(webhookUrl, {
+            cpf_cnpj,
+            vendedor,
+            fantasia,
+            telefone_vendedor
+        });
+
+        console.log("Resposta do webhook:", response.data);
+
+        res.status(200).json({ message: "Dados do vendedor parceiro salvos com sucesso!" });
+    } catch (err) {
+        console.error("Erro ao enviar dados para a planilha:", err);
+        res.status(500).json({ error: "Erro ao salvar os dados na planilha." });
+    }
+});
+
 // Iniciar o servidor
 app.listen(3000, () => {
     console.log("Servidor rodando na porta 3000");

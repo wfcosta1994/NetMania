@@ -104,20 +104,18 @@
     <div class="formVendedorParceiro">
         <img src="img/vendedorParceiro.png" alt="">
         <!-- <form class="vendedorParceiro" action="http://localhost:3000/salvar" method="POST"> estava sendo usado até 27/04/2025 -->
-        <form class="vendedorParceiro" action="http://localhost:3000/salvar" method="POST">
+        <form id="formVendedorParceiro" class="vendedorParceiro">
+            <label for="cpf_cnpj">CPF/CNPJ</label>
+            <input type="text" name="cpf_cnpj" placeholder="CPF/CNPJ" required> <br>
 
+            <label for="vendedor">Nome/Razão Social </label>
+            <input type="text" name="vendedor" placeholder="Nome" required> <br>
 
-            <label for="cpf">CPF/CNPJ</label>
-            <input type="text" name="cpf" placeholder="CPF/CNPJ"> <br>
+            <label for="fantasia">Fantasia</label>
+            <input type="text" name="fantasia" placeholder="Fantasia" required><br>
 
-            <label for="cliente">Nome/Razão Social </label>
-            <input type="text" name="cliente" placeholder="Nome"> <br>
-
-            <label for="indicado">Fantasia</label>
-            <input type="text" name="indicado" placeholder="Fantasia"><br>
-
-            <label for="telefone">Telefone</label>
-            <input type="text" name="telefone" placeholder="Telefone"> <br>
+            <label for="telefone_vendedor">Telefone</label>
+            <input type="text" name="telefone_vendedor" placeholder="Telefone" required> <br>
 
             <button type="submit">Enviar</button>
         </form>

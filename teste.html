@@ -1,33 +1,116 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8" />
-    <title>Teste Typing</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilares da Netmania</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 30px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            width: 80%;
+            max-width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .box {
+            border: 1px solid #001e60;
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+            min-height: 180px;
+        }
+
+        .missao h2 {
+            color: #009ddc;
+        }
+
+        .visao h2 {
+            color: #001e60;
+        }
+
+        .valores h2 {
+            color: #228b22;
+        }
+
+        .proposito {
+            border: 1px solid #001e60;
+            border-radius: 10px;
+            padding: 15px;
+            margin-top: 30px;
+            width: 68%;
+            /* max-width: 60%; */
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .proposito h2 {
+            color: #b3a200;
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .box {
+                /* width: 100%; */
+                /* max-width: 90%; */
+            }
+
+            .proposito {
+                width: 100%;
+                /* max-width: 90%; */
+            }
+        }
+    </style>
 </head>
 
 <body>
+    <h1>PILARES DA NETMANIA</h1>
 
-    <h1 id="typing-text"></h1>
+    <div class="container">
+        <div class="box missao">
+            <h2>MISSÃO</h2>
+            <p>Conectar pessoas ao mundo com excelência, de forma eficiente e gerando experiências únicas através da
+                tecnologia.</p>
+        </div>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const text = "Tudo isso com o suporte e a qualidade que só a Netmania oferece.";
-            const typingTextElement = document.getElementById("typing-text");
-            let index = 0;
+        <div class="box visao">
+            <h2>VISÃO</h2>
+            <p>Ser referência única ao conectar pessoas, impactar o mundo através da excelência no atendimento, gerando
+                resultados e consolidando nossa marca.</p>
+        </div>
 
-            function type() {
-                if (index < text.length) {
-                    typingTextElement.textContent += text.charAt(index);
-                    index++;
-                    setTimeout(type, 50);
-                }
-            }
+        <div class="box valores">
+            <h2>VALORES</h2>
+            <p>
+                1 - Ética e Respeito<br>
+                2 - Segurança e bem-estar<br>
+                3 - Valorizar pessoas<br>
+                4 - Engajamento e Pertencimento<br>
+                5 - Excelência no Atendimento<br>
+                6 - Inovação e Educação Contínua<br>
+                7 - Responsabilidade Social
+            </p>
+        </div>
+    </div>
 
-            typingTextElement.textContent = "";
-            type();
-        });
-    </script>
+    <div class="proposito">
+        <h2>PROPÓSITO</h2>
+        <p>Ser única ao conectar pessoas.</p>
+    </div>
 </body>
 
 </html>
