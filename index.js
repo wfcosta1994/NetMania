@@ -1,3 +1,75 @@
+// ----------------- COOKIES -----------------
+function aceitarCookies() {
+    localStorage.setItem('cookiesAceitos', 'true');
+    document.getElementById('cookie-banner').style.display = 'none';
+    location.reload();
+}
+
+function recusarCookies() {
+    localStorage.setItem('cookiesAceitos', 'false');
+    document.getElementById('cookie-banner').style.display = 'none';
+    bloquearCookies();
+}
+
+function bloquearCookies() {
+    document.cookie.split(";").forEach(function (c) {
+        document.cookie = c.trim().split("=")[0] + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+    });
+
+    const analytics = document.getElementById("analytics-script");
+    if (analytics) analytics.remove();
+}
+
+if (localStorage.getItem('cookiesAceitos') !== null) {
+    document.getElementById('cookie-banner').style.display = 'none';
+}
+
+if (localStorage.getItem('cookiesAceitos') === 'false') {
+    bloquearCookies();
+}
+// ----------------- ALTERAÇÕES DE CARDS -----------------
+let bruna = document.getElementById("bruna");
+let leonardo = document.getElementById("leonardo");
+let samanta = document.getElementById("samanta");
+let setaDireita = document.getElementById("setadireita");
+let setaEsquerda = document.getElementById("setaesquerda");
+
+function rolarparadireita() {
+    if (bruna && leonardo && setaDireita && setaEsquerda) {
+        bruna.style.display = "none";
+        leonardo.style.display = "flex";
+        setaDireita.style.display = "none";
+        setaEsquerda.style.display = "flex";
+    }
+}
+
+function rolarparaesquerda() {
+    if (bruna && leonardo && setaDireita && setaEsquerda) {
+        bruna.style.display = "flex";
+        leonardo.style.display = "none";
+        setaEsquerda.style.display = "none";
+        setaDireita.style.display = "flex";
+    }
+}
+
+let bonecoDireita = "img/icoDireita.jpg";
+let cards = document.getElementsByClassName("card");
+
+function alterarIcone(event) {
+    let imagem = event.currentTarget.querySelector(".card-img-top");
+    if (imagem) imagem.src = bonecoDireita;
+}
+
+function voltarIcone(event) {
+    let imagem = event.currentTarget.querySelector(".card-img-top");
+    if (imagem) imagem.src = "img/bonecosFrente.png";
+}
+
+for (let i = 0; i < cards.length; i++) {
+    cards[i].addEventListener('mouseover', alterarIcone);
+    cards[i].addEventListener('mouseout', voltarIcone);
+}
+
 // Aguarda o DOM carregar completamente antes de executar qualquer código
 document.addEventListener("DOMContentLoaded", function () {
 
@@ -48,48 +120,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     window.addEventListener('resize', highlightCenterSlide);
 
-    // ----------------- ALTERAÇÕES DE CARDS -----------------
-    let bruna = document.getElementById("bruna");
-    let leonardo = document.getElementById("leonardo");
-    let samanta = document.getElementById("samanta");
-    let setaDireita = document.getElementById("setadireita");
-    let setaEsquerda = document.getElementById("setaesquerda");
-
-    function rolarparadireita() {
-        if (bruna && leonardo && setaDireita && setaEsquerda) {
-            bruna.style.display = "none";
-            leonardo.style.display = "flex";
-            setaDireita.style.display = "none";
-            setaEsquerda.style.display = "flex";
-        }
-    }
-
-    function rolarparaesquerda() {
-        if (bruna && leonardo && setaDireita && setaEsquerda) {
-            bruna.style.display = "flex";
-            leonardo.style.display = "none";
-            setaEsquerda.style.display = "none";
-            setaDireita.style.display = "flex";
-        }
-    }
-
-    let bonecoDireita = "img/icoDireita.jpg";
-    let cards = document.getElementsByClassName("card");
-
-    function alterarIcone(event) {
-        let imagem = event.currentTarget.querySelector(".card-img-top");
-        if (imagem) imagem.src = bonecoDireita;
-    }
-
-    function voltarIcone(event) {
-        let imagem = event.currentTarget.querySelector(".card-img-top");
-        if (imagem) imagem.src = "img/bonecosFrente.png";
-    }
-
-    for (let i = 0; i < cards.length; i++) {
-        cards[i].addEventListener('mouseover', alterarIcone);
-        cards[i].addEventListener('mouseout', voltarIcone);
-    }
 
     // ----------------- BOTÕES E LINKS -----------------
     const url = "https://portal.netmaniainternet.com.br/auth/login";
@@ -104,35 +134,7 @@ document.addEventListener("DOMContentLoaded", function () {
         window.open("https://abrir.link/aWdtR", "_blank");
     }
 
-    // ----------------- COOKIES -----------------
-    function aceitarCookies() {
-        localStorage.setItem('cookiesAceitos', 'true');
-        document.getElementById('cookie-banner').style.display = 'none';
-        location.reload();
-    }
 
-    function recusarCookies() {
-        localStorage.setItem('cookiesAceitos', 'false');
-        document.getElementById('cookie-banner').style.display = 'none';
-        bloquearCookies();
-    }
-
-    function bloquearCookies() {
-        document.cookie.split(";").forEach(function (c) {
-            document.cookie = c.trim().split("=")[0] + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-        });
-
-        const analytics = document.getElementById("analytics-script");
-        if (analytics) analytics.remove();
-    }
-
-    if (localStorage.getItem('cookiesAceitos') !== null) {
-        document.getElementById('cookie-banner').style.display = 'none';
-    }
-
-    if (localStorage.getItem('cookiesAceitos') === 'false') {
-        bloquearCookies();
-    }
 
     // ----------------- FORMULÁRIO INDIQUE E GANHE -----------------
     const formIndique = document.querySelector("form.indiqueGanhe");
