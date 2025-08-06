@@ -375,7 +375,7 @@
     background-image: linear-gradient(to right, #0b2d70, #3693CA);
 
     /* imagem de fundo */
-    background-image: url('img/imgFundoPlano2.png'), linear-gradient(rgba(11, 45, 112, 0.6), rgba(54, 147, 202, 0.6));
+    background-image: url('img/fundoSite.JPG'), linear-gradient(rgba(11, 45, 112, 0.6), rgba(54, 147, 202, 0.6));
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -868,7 +868,6 @@
 
 .card-img {
     padding: 10px;
-
 }
 
 .seta {
