@@ -1194,28 +1194,33 @@ footer .enderecoFooter {
 .formIndiqueGanhe {
     padding: 1rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
+    background-image: url("img/indiqueGanhe_v2.JPG");
+    background-size: cover;
 
-    & img {
+    /* & img {
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         width: 30rem;
         height: 34.3rem;
         object-fit: cover;
-    }
+    } */
 }
 
 .formVendedorParceiro {
     padding: 1rem;
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
+    background-image: url("img/capaCardPlano_v2.JPG");
+    background-size: cover;
+    min-height: 85vh;
 
-    & img {
+    /* & img {
         height: 34.3rem;
         object-fit: cover;
-    }
+    } */
 }
 
 .indiqueGanhe {
