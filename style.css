@@ -1492,6 +1492,8 @@ footer .enderecoFooter {
         font-size: .7rem;
         width: 7rem;
         height: 2rem;
+
+        margin-bottom: 3rem;
     }
 
     .cardPlano {
