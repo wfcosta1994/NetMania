@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
     <title>NetMania Internet</title>
 </head>
 
@@ -607,8 +608,7 @@
         </div>
     </div> -->
 
-    <div id="carousel-cards">
-        <!-- <h1>Depoimentos de Clientes</h1> -->
+    <!-- <div id="carousel-cards">
         <h3>A prova do nosso sucesso está no impacto positivo que geramos na vida de cada cliente! </h3>
         <div id="cards-2">
             <img id="setaesquerda" class="seta" src="img/setaparaesquerda.svg" onclick="rolarparaesquerda()" alt="">
@@ -616,15 +616,67 @@
             <img id="leonardo" class="card-img" src="img/leonardo.svg" alt="">
             <img id="samanta" class="card-img" src="img/samanta.svg" alt="">
 
-            <!-- <img id="rogerio" class="card-img" src="img/bruna.svg" alt="">
-            <img id="wagner" class="card-img" src="img/leonardo.svg" alt="">
-            <img id="adrielly" class="card-img" src="img/samanta.svg" alt="">
-            <img id="mozarte" class="card-img" src="img/Dopoimento4.png" alt="">
-            <img id="joao" class="card-img" src="img/Dopoimento5.png" alt=""> -->
-
             <img id="setadireita" class="seta" src="img/setaparadireita.svg" onclick="rolarparadireita()" alt="">
         </div>
+    </div> -->
+
+    <div id="carousel-cards">
+        <h3>A prova do nosso sucesso está no impacto positivo que geramos na vida de cada cliente! </h3>
+        <div id="carouselMultiCard" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <div class="card-group2">
+                        <div class="depoimento">
+                            <div class="card-body">
+                                <img src="img/Depoimento.png" alt="">
+                            </div>
+                        </div>
+                        <div class="depoimento">
+                            <div class="card-body">
+                                <img src="img/Depoimento2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <div class="card-group2">
+                        <div class="depoimento">
+                            <div class="card-body">
+                                <img src="img/Depoimento3.png" alt="">
+                            </div>
+                        </div>
+                        <div class="depoimento">
+                            <div class="card-body">
+                                <img src="img/Depoimento5.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Controles (Setas) -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselMultiCard"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselMultiCard"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+
+        </div>
     </div>
+
+
+
+
 
     <!-- <div class="movies">
         <div class="text-movies">
@@ -830,6 +882,8 @@
     </script> -->
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
     <script src="index.js"></script>
 </body>
 
