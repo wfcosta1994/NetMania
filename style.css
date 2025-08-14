@@ -1747,6 +1747,18 @@ footer .enderecoFooter {
         flex-direction: column;
     }
 
+    .trabalheConosco {
+        display: flex;
+        flex-direction: column;
+        height: auto !important;
+        padding: 1.2rem;
+    }
+
+    .trabalheConoscoEmail {
+        width: 90% !important;
+        height: auto !important;
+    }
+
 }
 
 /* Celulares médios e tablets pequenos */
@@ -1761,6 +1773,17 @@ footer .enderecoFooter {
         margin-top: 1rem;
     }
 
+    .trabalheConosco {
+        display: flex;
+        flex-direction: column;
+        height: auto !important;
+        padding: 1.2rem;
+    }
+
+    .trabalheConoscoEmail {
+        width: 90% !important;
+        height: auto !important;
+    }
 
 }
 
@@ -1809,7 +1832,18 @@ footer .enderecoFooter {
 
 
 .trabalheConosco {
-    background-color: #0051ff;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background: #3694ca47;
     width: 100%;
+    height: auto;
+}
+
+.trabalheConoscoEmail {
+    padding: 2rem;
+    background: #3694ca6d;
+    margin: 10%;
+    width: 30%;
     height: auto;
 }
