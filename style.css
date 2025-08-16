@@ -9,7 +9,7 @@
 }
 
 #navbarNavDropdown {
-    font-size: 14px;
+    font-size: 0.8750rem;
     text-align: center;
     background-color: transparent;
 }
@@ -20,7 +20,6 @@
 }
 
 .primeiraDiv {
-    /* background-image: linear-gradient(to right, #001E5B, #3693CA); */
     background-image: linear-gradient(#021335ee, #3693CA);
     text-align: end;
     padding-right: 1%;
@@ -29,7 +28,7 @@
 
 .headTop {
     background-color: rgb(221, 235, 235);
-    width: 55%;
+    width: 65%;
     height: 2.5rem;
     position: absolute;
     margin-left: 8%;
@@ -39,7 +38,7 @@
 
 .headtop1 {
     position: absolute;
-    width: 200px;
+    width: 12.5000rem;
     height: 100%;
     margin-left: 20%;
     background-color: #3693CA;
@@ -65,10 +64,13 @@
     opacity: .6;
 }
 
+.ul_headTop {
+    padding: 0rem;
+}
+
 .ul_headTop li {
     list-style-type: none;
-    text-align: left;
-    margin-left: 4%;
+    text-align: center;
 }
 
 .ul_headTop li a {
@@ -147,7 +149,7 @@
 
 .capa {
     width: 100%;
-    height: 39rem;
+    height: 83vh;
     /* object-fit: cover; */
     background-size: cover;
 }
@@ -1153,26 +1155,6 @@ footer .enderecoFooter {
     color: #1a8906;
 }
 
-.mvv::before {
-    /* content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('img/mvv.jpg');
-    background-size: contain;
-    background-position: center;
-    opacity: 0.19;
-    z-index: 0; */
-}
-
-.mvv>* {
-    /* position: relative;
-    z-index: 1; */
-}
-
-
 #pl500 {
     padding: 1rem;
     text-align: center;
@@ -1200,13 +1182,6 @@ footer .enderecoFooter {
     align-items: center;
     background-image: url("img/indiqueGanhe_v2.JPG");
     background-size: cover;
-
-    /* & img {
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        width: 30rem;
-        height: 34.3rem;
-        object-fit: cover;
-    } */
 }
 
 .formVendedorParceiro {
@@ -1218,11 +1193,6 @@ footer .enderecoFooter {
     background-image: url("img/capaCardPlano_v2.JPG");
     background-size: cover;
     min-height: 85vh;
-
-    /* & img {
-        height: 34.3rem;
-        object-fit: cover;
-    } */
 }
 
 .indiqueGanhe {
@@ -1473,6 +1443,10 @@ footer .enderecoFooter {
 
     .linha1Footer {
         width: 100%;
+    }
+
+    .capa {
+        height: 45vh;
     }
 }
 
