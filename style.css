@@ -24,6 +24,21 @@
     text-align: end;
     padding-right: 1%;
     height: 2.5rem;
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+}
+
+/* Esse cod serve para fixar a barra com o menu */
+.sticky-top {
+    position: fixed !important;
+    top: auto !important;
+    z-index: 1000 !important;
+    width: 100% !important;
+}
+
+.carousel {
+    margin-top: 3.7rem;
 }
 
 .headTop {
@@ -314,6 +329,7 @@
 }
 
 #about {
+    margin-top: 3.7rem;
     display: flex;
     padding: 1rem;
 }
@@ -371,6 +387,23 @@
 }
 
 #card-preco-head {
+    margin-top: 3.7rem;
+    height: 43rem;
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(to right, #0b2d70, #3693CA);
+
+    /* imagem de fundo */
+    background-image: url('img/fundoSite.JPG'), linear-gradient(rgba(11, 45, 112, 0.6), rgba(54, 147, 202, 0.6));
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* mistura a imagem com o gradiente */
+    background-blend-mode: overlay;
+}
+
+#card-preco-head2 {
+    /* margin-top: 3.7rem; */
     height: 43rem;
     text-align: center;
     color: white;
@@ -386,6 +419,10 @@
 }
 
 #card-preco-head h1 {
+    padding-top: 1.5rem;
+}
+
+#card-preco-head2 h1 {
     padding-top: 1.5rem;
 }
 
@@ -849,6 +886,7 @@
 }
 
 #cobertura {
+    margin-top: 3.7rem;
     padding-top: 1rem;
     text-align: center;
     width: 100%;
@@ -1175,6 +1213,7 @@ footer .enderecoFooter {
 }
 
 .formIndiqueGanhe {
+    margin-top: 3.7rem;
     height: 38.4rem;
     padding: 1rem;
     display: flex;
@@ -1185,6 +1224,7 @@ footer .enderecoFooter {
 }
 
 .formVendedorParceiro {
+    margin-top: 3.7rem;
     padding: 1rem;
     display: flex;
     flex-direction: row-reverse;
@@ -1192,7 +1232,7 @@ footer .enderecoFooter {
     align-items: center;
     background-image: url("img/capaCardPlano_v2.JPG");
     background-size: cover;
-    min-height: 85vh;
+    min-height: auto;
 }
 
 .indiqueGanhe {
@@ -1805,6 +1845,7 @@ footer .enderecoFooter {
 
 
 .trabalheConosco {
+    margin-top: 3.7rem;
     display: flex;
     align-items: center;
     justify-content: flex-end;
