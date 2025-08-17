@@ -695,11 +695,11 @@
 }
 
 .featureContainer {
-    margin-top: -5%;
+    /* margin-top: -5%; */
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    /* min-height: 100vh; */
 }
 
 .feature {
@@ -710,7 +710,7 @@
 
 .subfeature {
     text-align: justify;
-    margin: auto;
+    margin-top: 3rem;
 }
 
 .coluns {
@@ -727,7 +727,7 @@
 }
 
 .card-col-1 {
-    margin: 130px 30px 0px 30px;
+    margin: 30px 30px 0px 30px;
 }
 
 .cards-feature:hover {
@@ -736,7 +736,7 @@
 }
 
 .card-col-2 {
-    margin-top: 11rem;
+    margin-top: 5rem;
 }
 
 .cards-feature {
@@ -1778,6 +1778,11 @@ footer .enderecoFooter {
         flex-direction: column;
     }
 
+    .card-body img {
+        padding: .6rem !important;
+        border-radius: 2rem !important;
+    }
+
     .trabalheConosco {
         display: flex;
         flex-direction: column;
@@ -1863,7 +1868,7 @@ footer .enderecoFooter {
 .card-body img {
     width: 100%;
     padding: 2rem;
-    border-radius: 5rem;
+    border-radius: 4rem;
 }
 
 .carousel-control-next {
