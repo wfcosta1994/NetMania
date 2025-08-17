@@ -335,6 +335,7 @@
 }
 
 #text-about {
+    width: 60%;
     font-size: 15px;
 }
 
@@ -346,13 +347,15 @@
     border-radius: 30%;
     box-shadow: -20px 10px 0px 0px #001E5B;
     transform: rotateY(30deg);
-    width: 56rem;
-    height: 40rem;
+    width: 100%;
+    height: 85vh;
     padding: 0.5rem;
+    margin-bottom: 3rem;
 }
 
 #div-img-about {
     margin-top: 1.5rem;
+    width: 100%;
 }
 
 .card-group .card {
@@ -869,7 +872,7 @@
 }
 
 #carousel-cards {
-    background-color: #3693CA;
+    /* background-color: #3693CA; */
     padding: 30px;
 }
 
@@ -882,7 +885,7 @@
 #carousel-cards h3 {
     text-align: center;
     padding-bottom: 5px;
-    color: white;
+    color: #002060;
 }
 
 #cobertura {
@@ -1214,8 +1217,7 @@ footer .enderecoFooter {
 
 .formIndiqueGanhe {
     margin-top: 3.7rem;
-    height: 38.4rem;
-    padding: 1rem;
+    height: auto;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -1225,14 +1227,15 @@ footer .enderecoFooter {
 
 .formVendedorParceiro {
     margin-top: 3.7rem;
-    padding: 1rem;
+    padding-top: 2rem;
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-end;
     align-items: center;
     background-image: url("img/capaCardPlano_v2.JPG");
     background-size: cover;
-    min-height: auto;
+    /* min-height: auto; */
+    height: auto;
 }
 
 .indiqueGanhe {
@@ -1244,8 +1247,9 @@ footer .enderecoFooter {
     background: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    max-width: 400px;
-    margin: 2rem;
+    max-width: 60vh;
+    margin: 2rem 6rem 2rem 2rem;
+
 
     & input {
         height: 2.3rem;
@@ -1306,8 +1310,8 @@ footer .enderecoFooter {
     background: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    max-width: 400px;
-    margin: 2rem;
+    max-width: 60vh;
+    margin: 0 0 2rem 10rem;
 
     & input {
         width: 100%;
@@ -1560,8 +1564,8 @@ footer .enderecoFooter {
     }
 
     #about {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column !important;
+        align-items: center !important;
     }
 
     #about #text-about {
@@ -1736,6 +1740,14 @@ footer .enderecoFooter {
         display: flex;
         align-items: center;
     }
+
+    .vendedorParceiro {
+        margin: 2rem !important;
+    }
+
+    .indiqueGanhe {
+        margin: 2rem !important;
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -1772,6 +1784,19 @@ footer .enderecoFooter {
         width: 90% !important;
         height: auto !important;
     }
+
+    .vendedorParceiro {
+        margin: 2rem !important;
+    }
+
+    .indiqueGanhe {
+        margin: 2rem !important;
+    }
+
+    #about {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
 }
 
 /* Celulares médios e tablets pequenos */
@@ -1796,6 +1821,11 @@ footer .enderecoFooter {
     .trabalheConoscoEmail {
         width: 90% !important;
         height: auto !important;
+    }
+
+    #about {
+        flex-direction: column !important;
+        align-items: center !important;
     }
 
 }
@@ -1851,7 +1881,7 @@ footer .enderecoFooter {
     justify-content: flex-end;
     background: #3694ca47;
     width: 100%;
-    height: auto;
+    height: 80vh;
 }
 
 .trabalheConoscoEmail {
