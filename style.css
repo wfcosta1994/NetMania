@@ -876,6 +876,10 @@
     padding: 30px;
 }
 
+#carouselMultiCard {
+    margin: 0;
+}
+
 #carousel-cards h1 {
     text-align: center;
     padding-bottom: 30px;
@@ -893,7 +897,7 @@
     padding-top: 1rem;
     text-align: center;
     width: 100%;
-    height: 40rem;
+    height: 42rem;
     background-image: linear-gradient(to right, #3694caad, #001e5bc4);
     color: white;
 }
@@ -1180,7 +1184,7 @@ footer .enderecoFooter {
         background-color: white;
         text-align: center;
         margin: -1.09rem auto 0 auto;
-        color: #b9ad0d;
+        color: #0096D1;
     }
 }
 
@@ -1189,11 +1193,11 @@ footer .enderecoFooter {
 }
 
 .visao h3 {
-    color: #022366;
+    color: #0096D1;
 }
 
 .valores h3 {
-    color: #1a8906;
+    color: #0096D1;
 }
 
 #pl500 {
@@ -1223,6 +1227,7 @@ footer .enderecoFooter {
     align-items: center;
     background-image: url("img/indiqueGanhe_v2.JPG");
     background-size: cover;
+
 }
 
 .formVendedorParceiro {
@@ -1879,9 +1884,11 @@ footer .enderecoFooter {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    background: #3694ca47;
+    background-image: url(img/fundoSite.JPG);
     width: 100%;
     height: 80vh;
+    color: white;
+    opacity: 0.9;
 }
 
 .trabalheConoscoEmail {
