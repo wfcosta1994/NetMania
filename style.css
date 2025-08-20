@@ -992,7 +992,8 @@
 footer {
     padding: 2%;
     width: 100%;
-    background-image: linear-gradient(to right, #3693CA, #001E5B);
+    /* background-image: linear-gradient(to right, #3693CA, #001E5B); */
+    background-image: linear-gradient(to right, #001E5B, #001e5be5);
 }
 
 footer .linha1 {
