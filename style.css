@@ -383,15 +383,15 @@
     display: flex;
     justify-content: center;
     padding: 5px;
-    margin-top: -50px;
+    /* margin-top: -50px; */
     position: relative;
     /* O cod abaixo ajuja tambem descer a barra de indicação dos cards */
-    height: 42rem;
+    height: 81%;
 }
 
 #card-preco-head {
     margin-top: 3.7rem;
-    height: 43rem;
+    height: 70%;
     text-align: center;
     color: white;
     background-image: linear-gradient(to right, #0b2d70, #3693CA);
@@ -407,7 +407,7 @@
 
 #card-preco-head2 {
     /* margin-top: 3.7rem; */
-    height: 43rem;
+    /* height: 43rem; */
     text-align: center;
     color: white;
     background-image: linear-gradient(to right, #0b2d70, #3693CA);
@@ -447,11 +447,10 @@
 }
 
 .card-destaque .cardPlano {
-    /* transform: scale(1.05); */
     transition: all 1s ease;
     z-index: 2;
     background-color: #022066;
-    height: 34rem !important;
+    height: 31rem !important;
 
     & h2 {
         margin-top: 0rem;
@@ -467,9 +466,8 @@
     display: flex !important;
     margin-top: 1rem;
     margin: 0.3rem;
-    height: 100%;
+    height: auto !important;
     align-items: center;
-    /* background-color: #732828; */
     justify-content: center;
 
     & a {
@@ -478,31 +476,16 @@
 }
 
 .cardPlano {
-    /* margin-top: -55px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 23rem !important;
-    height: 29rem !important;
-    font-size: 14px;
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    color: white;
-    border-radius: 2rem !important;
-    border: 0.1rem solid rgba(255, 255, 255, 0.3); */
-
     background-image: linear-gradient(to right, #0b2d701d, #3694caa2);
     color: white;
-    padding: 30px 20px;
+    padding: 1.8rem 1.4rem;
     border-radius: 20px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    width: 23rem !important;
+    width: 100% !important;
     text-align: center;
-    margin: 20px auto;
+    margin: 1.5rem auto;
     transition: all 1s ease;
-    height: 30rem !important;
+    /* height: 100% !important; */
     border: solid #3693CA;
 
     & h1 {
@@ -519,7 +502,7 @@
     }
 
     & li {
-        margin: 0.6rem;
+        margin: 0.5rem;
     }
 }
 
@@ -637,18 +620,12 @@
     /* cantos arredondados */
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    padding: 15px;
+    padding: .2rem;
     color: white;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
 }
 
 .valorPlano {
-    /* color: #00C7F6;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start; */
-    /* background: rgba(255, 255, 255, 0.1); */
     border-radius: 12px;
     padding: 6px;
     margin: 2px 0;
@@ -796,12 +773,12 @@
 
 .cardPlano button {
     width: 12rem;
-    height: 3.5rem;
+    height: 3.2rem;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 2rem;
-    margin-left: 4rem;
+    margin-left: 2.5rem;
     font-size: 1.4rem;
     font-weight: 600;
     font-family: 'Poppins', sans-serif;
