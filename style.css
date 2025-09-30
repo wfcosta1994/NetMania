@@ -332,11 +332,14 @@
     margin-top: 3.7rem;
     display: flex;
     padding: 1rem;
+    align-items: center;
+    justify-content: center;
 }
 
 #text-about {
     width: 60%;
     font-size: 15px;
+    /* padding: 2rem 0 0 3.3rem; */
 }
 
 #text-about h1 {
@@ -344,18 +347,21 @@
 }
 
 #img-about {
-    border-radius: 30%;
-    box-shadow: -20px 10px 0px 0px #001E5B;
+    /* border-radius: 30%; */
+    /* box-shadow: -20px 10px 0px 0px #001E5B; */
     transform: rotateY(30deg);
-    width: 100%;
-    height: 85vh;
+    /* width: 100%; */
+    height: 30rem;
     padding: 0.5rem;
-    margin-bottom: 3rem;
+    /* margin-bottom: 3rem; */
+    margin: 3rem;
 }
 
 #div-img-about {
-    margin-top: 1.5rem;
-    width: 100%;
+    /* margin-top: 1.5rem; */
+    width: auto;
+    display: flex;
+    justify-content: center;
 }
 
 .card-group .card {
