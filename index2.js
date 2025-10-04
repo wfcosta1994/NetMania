@@ -101,7 +101,7 @@ btn.addEventListener('click', () => {
 
 //Botão que dar acesso a página do plano de 500mg
 function link_plano() {
-    window.open("https://abrir.link/aWdtR", "_blank");
+    window.open("https://wa.me/559832370479", "_blank");
 
     //precisa alterar o link
 }
