@@ -126,12 +126,15 @@
 
 #btn_GetQuote {
     display: flex;
-    margin-top: 0.5%;
-    color: #001E5B;
+    /* margin-top: 0.5%; */
+    /* margin-left: 1rem; */
+    /* color: #001E5B; */
+    /* border-color: #001E5B; */
+    /* border-radius: .4rem; */
     border: none;
     /* border-radius: 20px; */
     background: none;
-    width: 150px;
+    width: 180px;
     height: 30px;
     align-items: center;
     justify-content: center;
@@ -140,20 +143,36 @@
     font-weight: 600;
 }
 
-#btn_GetQuote svg {
-    border-left: #dfe0e3 solid 2px;
-    padding-left: 0.65rem;
-    margin-right: 0.4rem;
+.barra {
+    /* margin-left: -1rem; */
+    font-weight: 900;
+    font-size: 1.5rem;
+    margin-top: -.3rem;
+    color: #c0c0c5;
 }
 
-/* #btn_GetQuote svg {
-    margin: .2rem;
-    margin-left: -2px;
-} */
+.btnMinhaNet {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    margin-left: 1rem;
+    color: #001E5B;
+    border-color: #001E5B !important;
+    border: solid #001E5B 2.2px;
+    border-radius: .4rem;
+    background: none;
+    width: 150px;
+    height: 30px;
 
-/* #btn_GetQuote:hover {
-    background-color: #001E5B;
-} */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+#btn_GetQuote svg {
+    /* border-left: #dfe0e3 solid 2px; */
+    /* padding-left: 1rem;
+    margin-right: 0.4rem; */
+}
 
 .logo {
     margin: -0.5rem -1rem 0 0;
