@@ -460,6 +460,8 @@
 
     & h2 {
         margin-top: 0rem;
+        font-weight: 700;
+        font-size: .9rem;
     }
 
     & h1 {
@@ -498,9 +500,14 @@
         font-size: 20px;
     }
 
+    & span {
+        font-size: .8rem;
+    }
+
     & h2 {
-        margin-top: -1rem;
-        font-size: 10px;
+        /* margin-top: -1rem; */
+        font-size: .8rem;
+        font-weight: 700;
     }
 
     & img {
@@ -510,6 +517,24 @@
     & li {
         margin: 0.5rem;
     }
+}
+
+.mais {
+    font-weight: 700;
+    font-family: Arial, sans-serif;
+}
+
+.tele {
+    font-weight: 700;
+    font-size: 1.3rem !important;
+    font-family: Arial, sans-serif;
+}
+
+.cine {
+    font-weight: 700;
+    font-size: 1.3rem !important;
+    color: #E60000;
+    font-family: Arial, sans-serif;
 }
 
 .cardPlanoCapa {
@@ -659,6 +684,7 @@
     height: 0.4rem;
     margin-top: -1rem;
     padding-bottom: .5rem !important;
+    text-decoration: line-through;
 }
 
 .cardPlano ul {
@@ -1057,7 +1083,7 @@ footer ul li a {
 }
 
 footer ul li a:hover {
-    color: #001E5B;
+    color: #9ba6b6;
 }
 
 
@@ -1111,7 +1137,7 @@ footer .enderecoFooter {
 }
 
 .termo-politica a:hover {
-    color: #001E5B;
+    color: #9ba6b6;
 }
 
 #pilares {
@@ -1124,11 +1150,12 @@ footer .enderecoFooter {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     padding: 2rem;
     color: #333;
     overflow: hidden;
     font-size: 1.2rem;
+
     /* background-image: url("img/fundoSite.JPG"); */
 
     /* font-weight: bold; */
@@ -1146,7 +1173,7 @@ footer .enderecoFooter {
 }
 
 .sub-mvv {
-    width: 25rem;
+    width: 22rem;
     height: 20rem;
     border: #001E5B solid 2px;
     border-radius: 1rem;
@@ -1162,6 +1189,7 @@ footer .enderecoFooter {
     border: #001E5B solid 2px;
     border-radius: 1rem;
     margin: 1rem;
+    width: 100%;
 
     & h3 {
         width: 12rem;
@@ -1791,6 +1819,7 @@ footer .enderecoFooter {
         flex-direction: column !important;
         align-items: center !important;
     }
+
 }
 
 /* Celulares médios e tablets pequenos */
@@ -1798,6 +1827,7 @@ footer .enderecoFooter {
     .featureContainer {
         margin-top: auto;
     }
+
 
     .subfeature {
         text-align: center;
@@ -1826,7 +1856,6 @@ footer .enderecoFooter {
 
 /* Telas grandes */
 @media screen and (max-width: 1200px) {}
-
 
 .carousel-inner {
     display: flex;
