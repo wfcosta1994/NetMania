@@ -706,6 +706,10 @@
     text-decoration: line-through;
 }
 
+.oferta {
+    text-decoration: none;
+}
+
 .cardPlano ul {
     list-style: none;
     text-align: justify;
